@@ -1,0 +1,130 @@
+body {
+	background-color: black;
+	color: lightpink;
+}
+
+a {
+	font-size: 80px;
+	font-family: Helvetica Neue;
+	color: lightpink;
+}
+
+a:hover {
+	color: yellow;
+}
+
+.content {
+	font-size: 80px;
+	font-family: Helvetica Neue;
+
+}
+
+.walk:hover {
+	color: yellow;
+
+}
+
+.down:hover {
+	color: yellow;
+}
+
+.the:hover {
+	color: yellow;
+}
+
+.eat:hover {
+	color: yellow;
+}
+
+.straight:hover {
+	color: yellow;
+}
+
+.right:hover {
+	color: yellow;
+}
+
+.asap {
+	display: none;
+}
+
+.cocteau {
+	display: none;
+}
+
+.frank {
+	display: none;
+}
+
+.yellow {
+	display: none;
+}
+
+.far {
+	display: none;
+}
+
+.kendrick {
+	display: none;
+}
+
+.walk:hover:after {
+  display: block;
+  content: url(../assets/asap.jpg);
+  position: absolute;
+  left: 30%;
+  top: 30%;;
+}
+
+.down:hover:after {
+  display: block;
+  content: url(../assets/cocteau.jpg);
+  position: absolute;
+  left: 30%;
+  top: 30%;;
+}
+
+.the:hover:after {
+  display: block;
+  content: url(../assets/frankocean.jpeg);
+  position: absolute;
+  left: 30%;
+  top: 30%;;
+}
+
+.eat:hover:after {
+  display: block;
+  content: url(../assets/yellowdays.jpg);
+  position: absolute;
+  left: 30%;
+  top: 30%;;
+}
+
+.straight:hover:after {
+  display: block;
+  content: url(../assets/farcaspian.jpg);
+  position: absolute;
+  left: 30%;
+  top: 30%;;
+}
+
+.right:hover:after {
+  display: block;
+  content: url(../assets/kendrick.jpg);
+  position: absolute;
+  left: 30%;
+  top: 30%;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
