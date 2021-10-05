@@ -7,7 +7,7 @@ body {
   position: relative;
   background-color: #1F44A3;
   padding: 50px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .heading {
@@ -32,9 +32,9 @@ body {
 	height: 100px;
 	text-align: right;
 
-	font-family: Bebas;
+	font-family: Bebas Neue;
 	color: #E5E5E5;
-	font-size: 120px;
+	font-size: 130px;
 }
 
 .header2 {
@@ -44,9 +44,9 @@ body {
 	height: 100px;
 	text-align: left;
 
-	font-family: Bebas;
+	font-family: Bebas Neue;
 	color: #E5E5E5;
-	font-size: 120px;
+	font-size: 130px;
 }
 
 #rectangle {
