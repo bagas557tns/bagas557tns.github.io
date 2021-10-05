@@ -3,9 +3,10 @@ html {
 }
 
 body {
-  position: relative;
-  background-color: #1F44A3;
-  padding: 50px;
+position: relative;
+background-color: #1F44A3;
+padding: 50px;
+font-family: "Bebas Neue", sans-serif;
 }
 
 .heading {
