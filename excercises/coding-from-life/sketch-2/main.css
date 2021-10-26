@@ -1,0 +1,525 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: #FF9C48;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+
+.tabletop {
+  width: 85%;
+  height:  30%;
+  background: #FFDDBA;
+  position: absolute;
+  top: 60%;
+  left: 7.5%;
+  transform: skewX(40deg);
+}
+
+.table-front {
+  width: 85%;
+  height: 5%;
+  background: #FEBE7E;
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  z-index: 0;
+}
+
+.table-side {
+  width: 15%;
+  height: 5%;
+  background: #FEBE7E;
+  position: absolute;
+  bottom: 20%;
+  left: 0%;
+  z-index: 0;
+  transform: skewY(50deg);
+}
+
+/* PUMPKIN */
+
+.pumpkin-bottom{
+  width: 18%;
+  height: 25%;
+  background: rgb(87,56,92);
+  background: linear-gradient(0deg, rgba(87,56,92,1) 0%, rgba(236,114,99,1) 100%);
+  position: absolute;
+  bottom: 22%;
+  right: 20%;
+  border-radius: 98%;
+  z-index: 1;
+  filter: drop-shadow(12px 16px 8px #FF9C48)
+
+}
+
+.pumpkin-top{
+  width: 7%;
+  height: 12%;
+  background: rgb(236,114,99);
+  background: linear-gradient(0deg, rgba(236,114,99,1) 0%, rgba(87,56,92,1) 100%);
+  position: absolute;
+  bottom: 45%;
+  right: 25.5%;
+  border-radius: 98%;
+  z-index: 2;
+}
+
+.pumpkin-stem{
+  width: 2%;
+  height: 4.5%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(87,56,92,1) 79%);  position: absolute;
+  bottom: 55%;
+  right: 28%;
+  z-index: 3;
+  position: absolute;
+}
+
+/* VASE */
+
+.vase1 {
+  position: absolute;
+  width: 14%;
+  height: 41%;
+  border-radius: 45%/10%;
+  background: rgb(168,49,84);
+  background: linear-gradient(0deg, rgba(168,49,84,1) 0%, rgba(240,186,181,1) 79%);  bottom: 210px;
+  opacity: 0.5;
+  z-index: 3;
+  right: 45%;
+  bottom: 35%;
+  position: absolute;
+}
+.vase2 {
+  width: 0vw;
+  height: 0vw;
+  border-left: 6.5vw solid transparent;
+  border-right: 6.5vw solid transparent;
+  border-bottom: 6.5vw solid #a83154;
+  position: absolute;
+  bottom: 15.5vw;
+  transform: rotate(180deg);
+  left: 39.2vw;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+.vase3 {
+  width: 0vw;
+  height: 0vw;
+  border-left: 6.5vw solid transparent;
+  border-right: 6.5vw solid transparent;
+  border-bottom: 6.5vw solid #a83154;
+  position: absolute;
+  bottom: 9.1vw;
+  left: 39.2vw;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+.vase4 {
+  width: 13.8%;
+  height: 3%; 
+  background: rgb(168,49,84);
+  background: linear-gradient(90deg, rgba(168,49,84,1) 0%, rgba(240,186,181,1) 79%);
+  opacity: 0.5;
+  z-index: 3;
+  bottom: 13%;
+  right: 45%;
+  position: absolute;
+}
+
+/* STEMS */
+
+.stem1{
+  position: absolute;
+  background: #57385c;
+  width: 1%;
+  height: 40.6%;
+  z-index: 2;
+  bottom: 37%;
+  right: 51.5%;
+  }
+
+.stem2{
+  position: absolute;
+  background: #57385c;
+  width: 1%;
+  height: 40.6%;
+  z-index: 2;
+  bottom: 37%;
+  right: 54%;
+  }
+
+.stem3{
+  position: absolute;
+  background: #57385c;
+  width: 1%;
+  height: 40.6%;
+  z-index: 2;
+  bottom: 37%;
+  right: 49%;
+  }
+
+/* FLOWERS */
+
+.flower1 {
+  width: 6.5%;
+  height: 11%;
+  background: red;
+  border-radius: 100%;
+  z-index: 3;
+  position: absolute;
+  background: rgb(198,13,58);
+  background: radial-gradient(circle, rgba(198,13,58,1) 7%, rgba(255,114,77,1) 75%);
+  bottom: 85%;
+  right: 45%;
+}
+
+.flower2 {
+  width: 6.5%;
+  height: 11%;
+  background: red;
+  border-radius: 100%;
+  z-index: 3;
+  position: absolute;
+  background: rgb(198,13,58);
+  background: radial-gradient(circle, rgba(198,13,58,1) 7%, rgba(255,114,77,1) 75%);
+  bottom: 80%;
+  right: 39%;
+}
+
+.flower3 {
+  width: 6.5%;
+  height: 11%;
+  background: red;
+  border-radius: 100%;
+  z-index: 2;
+  position: absolute;
+  background: rgb(198,13,58);
+  background: radial-gradient(circle, rgba(198,13,58,1) 7%, rgba(255,114,77,1) 75%);
+  bottom: 77%;
+  right: 46%;
+}
+
+.flower4 {
+  width: 6.5%;
+  height: 11%;
+  background: red;
+  border-radius: 100%;
+  z-index: 2;
+  position: absolute;
+  background: rgb(198,13,58);
+  background: radial-gradient(circle, rgba(198,13,58,1) 7%, rgba(255,114,77,1) 75%);
+  bottom: 74%;
+  right: 50%;
+}
+
+.flower5 {
+  width: 6.5%;
+  height: 11%;
+  background: red;
+  border-radius: 100%;
+  z-index: 2;
+  position: absolute;
+  background: rgb(198,13,58);
+  background: radial-gradient(circle, rgba(198,13,58,1) 7%, rgba(255,114,77,1) 75%);
+  bottom: 81%;
+  right: 50%;
+}
+
+.flower6 {
+  width: 6.5%;
+  height: 11%;
+  background: red;
+  border-radius: 100%;
+  z-index: 2;
+  position: absolute;
+  background: rgb(198,13,58);
+  background: radial-gradient(circle, rgba(198,13,58,1) 7%, rgba(255,114,77,1) 75%);
+  bottom: 77%;
+  right: 56%;
+}
+
+/* BUDS */
+
+.bud1 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 10%;
+  right: 55%;
+  position: absolute;
+}
+
+.bud2 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 12%;
+  right: 58%;
+  position: absolute;
+}
+
+.bud3 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 6%;
+  right: 57%;
+  position: absolute;
+}
+
+.bud4 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 6%;
+  right: 60.5%;
+  position: absolute;
+}
+
+.bud5 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 11%;
+  right: 61%;
+  position: absolute;
+}
+
+.bud6 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 16%;
+  right: 56%;
+  position: absolute;
+}
+
+.bud7 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 18%;
+  right: 59%;
+  position: absolute;
+}
+
+.bud8 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 19%;
+  right: 54%;
+  position: absolute;
+}
+
+.bud9 {
+  width: 1.5%;
+  height: 2.5%;
+  background: #FFDDBA;
+  border-radius: 100%;
+  z-index: 4;
+  top: 22%;
+  right: 56%;
+  position: absolute;
+}
+
+/* GOURDS */
+
+.gourd1 {
+  width: 16%;
+  height: 15%;
+  background: rgb(236,114,99);
+  background: linear-gradient(0deg, rgba(236,114,99,1) 0%, rgba(254,190,126,1) 79%);
+  border-radius: 100%;
+  transform: rotate(-20deg);
+  z-index: 3;
+  bottom: 13%;
+  right: 37%;
+  position: absolute;
+  filter: drop-shadow(12px 16px 8px #FF9C48)
+
+}
+
+.gourd2 {
+  width: 20%;
+  height: 25%;
+  background: rgb(236,114,99);
+  background: linear-gradient(0deg, rgba(236,114,99,1) 0%, rgba(254,190,126,1) 79%);
+  border-radius: 45%;
+  transform: rotate(-5deg);
+  z-index: 1;
+  bottom: 27%;
+  right: 45%;
+  position: absolute;
+  filter: drop-shadow(12px 16px 8px #FF9C48)
+
+}
+
+.base {
+  width: 10%;
+  height: 8%;
+  background: #a75265;
+  border-radius: 100%;
+  bottom: 20%;
+  left: 20%;
+  position: absolute;
+  background: rgb(87,56,92);
+  background: radial-gradient(circle, rgba(87,56,92,1) 0%, rgba(236,114,99,1) 51%);
+}
+
+.stick{
+  position: absolute;
+  background: rgb(87,56,92);
+  background: linear-gradient(-90deg, rgba(87,56,92,1) 0%, rgba(236,114,99,1) 51%);  
+  width: 1%;
+  height: 24%;
+  z-index: 2;
+  bottom: 24%;
+  left: 24.5%;
+  }
+
+.holder{
+  position: absolute;
+  width: 3%;
+  height: 16%;
+  border-radius: 50px/25px;
+  background: rgb(87,56,92);
+  background: linear-gradient(-90deg, rgba(87,56,92,1) 0%, rgba(236,114,99,1) 67%);
+  left: 23.5%;
+  bottom: 40%;
+  z-index: 3;
+}
+
+.candle{
+  position: absolute;
+  width: 2.25%;
+  height: 12%;
+  border-radius: 50px/25px;
+  background: rgb(255,242,228);
+  background: linear-gradient(180deg, rgba(255,242,228,1) 4%, rgba(252,178,103,1) 65%);
+  left: 23.8%;
+  bottom: 54%;
+  z-index: 4; 
+}
+
+.flame{
+  border-radius: 5px 300px 3px 300px;
+  background: #fff9f3;
+  width: 20%;
+  height: 20%;
+  transform: scale(0.12,0.12) rotate(60deg);
+  z-index: 2;
+  bottom: 59%;
+  left: 15%;
+  position: absolute;
+}
+
+.glow {
+  width: 6.5%;
+  height: 11%;
+  border-radius: 100%;
+  z-index: 1;
+  bottom: 63%;
+  left: 21.75%;
+  position: absolute;
+  background: rgb(254,190,126);
+background: radial-gradient(circle, rgba(254,190,126,1) 36%, rgba(255,123,59,0) 91%);
+}
+
+
+.leaf1{
+  border-radius: 5px 300px 3px 300px;
+  background: #57385c;
+  width: 17%;
+  height: 18%;
+  transform: scale(0.35,0.35) rotate(120deg);
+  z-index: 2;
+  bottom: 50%;
+  right: 41%;
+  position: absolute;
+}
+
+.leaf2{
+  border-radius: 5px 300px 3px 300px;
+  background: #57385c;
+  width: 17%;
+  height: 18%;
+  transform: scale(0.35,0.35) rotate(-170deg);
+  z-index: 2;
+  bottom: 57%;
+  right: 46%;
+  position: absolute;
+}
+
+.leaf3{
+  border-radius: 5px 300px 3px 300px;
+  background: #57385c;
+  width: 17%;
+  height: 18%;
+  transform: scale(0.35,0.35) rotate(-170deg);
+  z-index: 2.75;
+  bottom: 68%;
+  right: 49%;
+  position: absolute;
+}
+
+.leaf4{
+  border-radius: 5px 300px 3px 300px;
+  background: #57385c;
+  width: 17%;
+  height: 18%;
+  transform: scale(0.35,0.35) rotate(120deg);
+  z-index: 2.75;
+  bottom: 68%;
+  right: 38%;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
