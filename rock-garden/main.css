@@ -153,6 +153,9 @@ a:active {
   position: absolute;
   left: calc(50% - 1vw);
   top: calc(50% - 1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle:hover {
@@ -259,12 +262,22 @@ left: 43%;
 /*display: none;*/
 }
 
-/*.c1:hover + .heal {*/
-	/*display: block;*/
+.c1:hover + .heal {
+	display: block; 
 }
 
-/*.hide {*/
-	/*display: none;*/
+.hide {
+	display: none;
+}
+
+.show {
+	display: flex;
+}
+
+
+.red {
+	color: red;
+	background-color: red;
 }
 
 
