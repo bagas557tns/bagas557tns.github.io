@@ -1,0 +1,255 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: black;
+	color: white;
+	font-family: halyard-display,sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 3.33vw;
+	padding: 2vw;
+}
+
+/*TEXT*/
+
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 15vw;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	gap: 4vw;
+}
+
+button {
+	position: relative;
+	background: none;
+	border: none;
+	outline: none;
+	font-family: halyard-display,sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 1.66vw;
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔮</text></svg>") 16 0,auto; /*!emojicursor.app*/	color: white;
+	right: 0.5vw;
+	transition: 0.3s ease;
+}
+
+
+.prompts {
+	font-size: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 14vw;
+	padding-bottom: 6vw;
+}
+
+.projects {
+	font-size: 50%;
+	padding-bottom: 3vw;
+}
+
+.exercises {
+	font-size: 50%;
+}
+
+.back {
+	position: relative;
+	font-size: 50%;
+	top: 90vw;
+	padding-bottom: 3vw;
+}
+
+/*IMAGES*/
+
+
+#interview {
+	position: relative;
+	left: 21.3vw;
+}
+
+#kadha {
+	position: relative;
+	left: 35vw;
+	bottom: -25vw;
+}
+
+.container1 {
+	padding-bottom: 30vw;
+}
+
+img {
+	width: 24%;
+	height: auto;
+	transition: 0.4s ease;	
+}
+
+img:hover {
+	transform: scale(1.1);
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='49' height='59' viewport='0 0 100 100' style='fill:black;font-size:29px;'><text y='50%'>🤔</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+#playlist {
+	position: relative;
+	transform: scale(0.4);
+	left: 21.3vw;
+	bottom: 15vw;
+}
+
+#magic {
+	position: relative;
+	left: 30vw;
+	top: -5vw;
+}
+
+#candle {
+	position: relative;
+	transform: scale(0.5);
+	left: -30vw;
+	bottom: -33vw;
+}
+
+#animation {
+	position: relative;
+	left: -13vw;
+	bottom: -45vw;
+}
+
+#guava {
+	position: relative;
+	left: 20vw;
+	transform: scale(1.4);
+	bottom: -40vw;
+
+}
+
+#rainbow {
+	position: relative;
+	left: 30vw;
+	bottom: -65vw;
+}
+
+#celebrate {
+	position: relative;
+	left: -30vw;
+	top: 85vw;
+}
+
+/*LINKS*/
+
+a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+  	position: relative;
+  	transition: 0.3s ease;
+ }
+
+ a:hover {
+ 	color: #feb236;
+ }
+
+ button:hover {
+ 	color: #feb236;
+ }
+
+ .about:hover {
+ 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='49' height='59' viewport='0 0 100 100' style='fill:black;font-size:29px;'><text y='50%'>🙋🏽‍♀️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+ }
+
+ .work {
+ 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='49' height='59' viewport='0 0 100 100' style='fill:black;font-size:29px;'><text y='50%'>📝</text></svg>") 16 0,auto; /*!emojicursor.app*/
+ }
+
+ /*MEDIA Q*/
+
+ @media (max-width: 850px) {
+	.header {
+		font-size: 180%;
+		display: flex;
+		flex-direction: column;
+		}
+.menu {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5vw;
+	}
+	button {
+		position: relative;
+		font-size: 180%;
+		right: 2vw;
+	}
+	.prompts {
+		position: relative;
+		font-size: 180%;
+		padding-bottom: 20vw;
+		gap: 10vw;
+
+	}
+	.projects {
+		font-size: 180%;
+		padding-bottom: 15vw;
+	}
+	.exercises {
+		font-size: 180%;
+		padding-bottom: 15vw;	
+	}
+	.back {
+		font-size: 180%;
+	}
+	img {
+		width: 24%;
+	}
+
+@media (max-width: 768px) {
+	.header {
+		font-size: 180%;
+		}
+
+@media (max-width: 650px) {
+	.header {
+		font-size: 200%;
+		display: flex;
+		flex-direction: column;
+		gap: 5vw;
+		}
+	.menu {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5vw;
+	}
+	button {
+		position: relative;
+		font-size: 200%;
+		right: 2vw;
+	}
+	.prompts {
+		position: relative;
+		font-size: 200%;
+		padding-bottom: 20vw;
+		gap: 40vw;
+
+	}
+	.projects {
+		font-size: 200%;
+		padding-bottom: 15vw;
+	}
+	.exercises {
+		font-size: 200%;
+		padding-bottom: 15vw;	
+	}
+	.back {
+		font-size: 200%;
+	}
+	img {
+		width: 24%;
+	}
+
+
+
