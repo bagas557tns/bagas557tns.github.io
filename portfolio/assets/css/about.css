@@ -58,10 +58,10 @@ a {
 
 @media (max-width: 850px) {
 	.header {
-		font-size: 120%;
+		font-size: 180%;
 		}
 	.body {
-		font-size: 100%;
+		font-size: 130%;
 	}
 
 @media (max-width: 768px) {
