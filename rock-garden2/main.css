@@ -122,20 +122,6 @@ a:hover {
 	padding-top: 0.5vw;
 }
 
-@media (max-width: 768px) {
-		.header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			padding-right: 8vw;
-		}
-		.menu {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-  }
-
 /*ANIMATION*/
 
    #container {
@@ -198,4 +184,79 @@ line-height: 44px;
 text-align: justify;
 text-align-last: center;
 word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+		.header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding-right: 10vw;
+		}
+		.menu {
+			padding-top: 10vw;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			right: -4vw;
+		}
+
+		#container {
+			position: relative;
+			width: 768px;
+      height: 768px;
+			left: -30%;
+			top: -50vw;
+		}
+
+		.circle {
+      border-radius: 50%;
+      background-color: #CA4512;
+      width: 25vw;
+      height: 25vw;
+      position: absolute;
+      opacity: 0;
+      animation: scaleIn 5s infinite cubic-bezier(.36, .11, .89, .32);
+    }
+ 
+    .item {
+      z-index: 100;
+      padding: 5px;
+      width: 150px;
+      color: #E2D0BE;
+      font-size: 2.2vw;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+    }
+
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+
+
+.recipe-block {
+position: relative;
+padding-right: 24vw;
+padding-left: 24vw;
+padding-bottom: -5vw;
+padding-top: -60vw;
+font-family: Cormorant Garamond;
+font-style: normal;
+font-weight: 400;
+font-size: 4.5vw;
+line-height: 44px;
+text-align: justify;
+word-wrap: break-word;
+}
 }
