@@ -1,0 +1,33 @@
+body {
+	background: rgb(50, 62, 148);
+	font-family: Helvetica;
+	color: white;
+}
+
+.circle{
+  width: 20%;
+  height: 40%;
+  background: rgb(87,56,92);
+  background: linear-gradient(0deg, rgba(87,56,92,1) 0%, rgba(236,114,99,1) 100%);
+  position: absolute;
+  border-radius: 98%;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.circle:hover {
+	display: none;
+}
+
+.circle2{
+  width: 20%;
+  height: 40%;
+  background: rgb(87,56,92);
+  background: linear-gradient(0deg, rgba(87,56,92,1) 0%, rgba(236,114,99,1) 100%);
+  position: absolute;
+  left: 50%;
+  border-radius: 98%;
+  z-index: 1;
+  transition: 0.5s ease;
+  display: none;
+}
