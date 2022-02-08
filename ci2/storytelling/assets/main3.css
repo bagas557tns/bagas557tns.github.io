@@ -1,0 +1,44 @@
+body {
+	background: #FFF9F4;
+	color: #0919A4;
+	font-family: minion-pro-condensed, serif;
+	font-weight: 200;
+}
+
+.header {
+	font-style: italic;
+	font-size: 4.5vw;
+	padding-left: 2vw;
+}
+
+.button {
+	position: relative;
+	padding: 0.3vw;
+	margin: auto;
+	position: relative;
+	font-size: 2.5vw;
+	text-align: center;
+	width: 16%;
+  	border: 0.15vw solid #0919A4;
+ 	border-radius: 50px;
+ 	transition: 0.3s ease;
+ 	left: 36vw;
+ 	bottom: 5vw;
+}
+
+.button:hover {
+	background: #0919A4;
+	color: #FFF9F4;
+}
+
+img {
+	position: relative;
+	width: 100%;
+	height: auto;
+	bottom: 3vw;
+}
+
+a {
+	text-decoration: none;
+	color: #0919A4;
+}

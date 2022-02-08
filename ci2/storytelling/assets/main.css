@@ -1,0 +1,86 @@
+body {
+	background: #FFF9F4;
+	color: #0919A4;
+	font-family: minion-pro-condensed, serif;
+	font-weight: 200;
+}
+
+.header {
+	padding: 0.5vw;
+	font-size: 4.5vw;
+	line-height: 4.75vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+img {
+	width: 100%;
+	height: auto;
+	padding-top: 1vw;
+	padding-bottom: 3vw;
+}
+
+.button {
+	padding: 1vw;
+	margin: auto;
+	position: relative;
+	font-size: 3.5vw;
+	text-align: center;
+	width: 25%;
+  	border: 0.15vw solid #0919A4;
+ 	border-radius: 50px;
+ 	transition: 0.3s ease;
+}
+
+.button:hover {
+	background: #0919A4;
+	color: #FFF9F4;
+}
+
+
+
+hr {
+	border: 1px solid #0919A4;
+	margin: 1vw;
+}
+
+.content {
+	padding: 3vw;
+	font-size: 2.2vw;
+	display: flex;
+	flex-direction: row;
+}
+
+.p1 {
+	display: block;
+	width: 33vw;
+
+}
+
+.p2 {
+	display: block;
+	width: 50vw;
+
+}
+
+span {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+	color: #0919A4;
+}
+
+
+
+
+
+
+
+
+
+
+
