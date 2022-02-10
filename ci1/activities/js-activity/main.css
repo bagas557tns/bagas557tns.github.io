@@ -1,0 +1,93 @@
+body {
+  background-color: #ffc700;
+  position: relative;
+  font-family: 'Erica One', cursive;
+}
+
+.eat {
+position: absolute;
+width: 965px;
+height: 672px;
+left: 33px;
+top: 7px;
+z-index: -1;
+font-family: Erica One;
+font-style: normal;
+font-weight: normal;
+font-size: 230px;
+line-height: 108.14%;
+
+letter-spacing: 0.02em;
+
+color: #000000;
+}
+
+.oval {
+width: 300px;
+height: 60px;
+background: black;
+border-radius: 250px / 60px;
+transform: scale(1.5);
+z-index: -2;
+
+position: absolute;
+left: 650px;
+top: 425px;
+}
+
+#guava {
+  position: relative;
+  z-index: 2;
+  max-width: 35%;
+  height: auto;
+  left: 44%;
+  bottom: -60px;
+}
+
+.circle {
+position: relative;
+width: 250px;
+height: 250px;
+left: 1090px;
+top: 50px;
+border-radius: 50%;
+background: #ffc700;
+border: 6px solid #000000;
+box-sizing: border-box;
+z-index: -2;
+overflow: hidden;
+}
+
+.click2 {
+position: absolute;
+width: 269.09px;
+height: 100.63px;
+right: 80px;
+top: 534.7px;
+
+font-family: Erica One;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #000000;
+transform: rotate(-18.44deg);
+z-index: 2;
+}
+
+.click2:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

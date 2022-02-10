@@ -1,0 +1,39 @@
+body {
+	background: darkred;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#man {
+	position: relative;
+	height: 500px;
+  	animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes falling {
+    0% {
+        transform: scale(1.0,1.0) rotate(0turn);
+    }
+    100% {
+        transform: scale(0.1,0.1) rotate(2turn);
+    }
+}
+
+#man:hover {
+	animation: falling 8s linear infinite;
+}

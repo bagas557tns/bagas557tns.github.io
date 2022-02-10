@@ -1,0 +1,496 @@
+html {
+	cursor: url('assets/cursor.png'), auto;
+}
+body {
+	background: black;
+	color: white;
+	padding: 15px;
+	font-family: meno-banner, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.header {
+display: flex;
+font-family: Meno Banner;
+font-style: normal;
+font-weight: normal;
+font-size: 90px;
+line-height: 110px;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.h2 {
+	display: none;
+}
+
+.h1:hover +.h2 { 
+	display: flex;
+	color: white;
+}
+
+.h1:hover {
+	color: red;
+}
+
+
+.container1 {
+	display: flex;
+	padding: 5px;
+	font-family: Meno Banner;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 19px;
+	justify-content: space-between;
+}
+
+.container2 {
+	font-family: Meno Banner;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	align-content: flex-start;
+}
+
+.container3 {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: center;
+	align-items: center;
+}
+
+.themagician {
+	max-width: 30%;
+	padding-top: 50px;
+}
+
+.minicont1 {
+font-family: Meno Banner;
+font-style: italic;
+font-weight: lighter;
+font-size: 29px;
+line-height: 35px;
+padding: 60px;
+word-break: break-all;
+}
+
+.container4 {
+	display: flex;
+	padding: 5px;
+	font-family: Meno Banner;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	justify-content: space-between;
+}
+
+.container5 {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	align-content: flex-start;
+}
+
+.container6 {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: center;
+	align-items: center;
+}
+
+.historian {
+	max-width: 30%;
+	padding-top: 50px;
+}
+
+.minicont2 {
+font-family: Meno Banner;
+font-style: italic;
+font-weight: lighter;
+font-size: 29px;
+line-height: 35px;
+padding: 60px;
+word-break: break-all;
+}
+
+.container7 {
+	display: flex;
+	padding: 5px;
+	font-family: Meno Banner;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	justify-content: space-between;
+}
+
+.container8 {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	align-content: flex-start;
+}
+
+.container9 {
+	display: flex;
+	padding: 5px;
+	font-family: Meno Banner;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	justify-content: space-between;
+}	
+
+.container10 {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	align-content: flex-start;
+}
+
+.container11 {
+	display: flex;
+	padding: 5px;
+	font-family: Meno Banner;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	justify-content: space-between;
+}
+
+.container12 {
+	display: flex;
+	padding: 5px;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 34px;
+	justify-content: space-between;
+}
+
+.container13 {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	align-content: flex-start;
+}
+
+.container14 {
+	display: flex;
+	padding: 5px;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 34px;
+	justify-content: space-between;
+}
+
+.container15 {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	align-content: flex-start;
+}
+
+.container16 {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: center;
+	align-items: center;
+} 
+
+.amulet {
+	max-width: 30%;
+	padding-top: 50px;
+}
+
+.minicont3 {
+font-family: Meno Banner;
+font-style: italic;
+font-weight: lighter;
+font-size: 29px;
+line-height: 35px;
+padding: 60px;
+word-break: break-all;
+}
+
+.container17 {
+	display: flex;
+	padding: 5px;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 34px;
+	justify-content: space-between;
+}
+
+.container18 {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	align-content: flex-start;
+}
+
+.p25 {
+font-family: Meno Banner;
+font-style: italic;
+font-weight: normal;
+font-size: 35px;
+line-height: 42px;
+}
+
+.container19 {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: center;
+	align-items: center;
+}
+
+.hecate {
+	max-width: 30%;
+	padding-top: 50px;
+}
+
+.minicont4 {
+font-family: Meno Banner;
+font-style: italic;
+font-weight: lighter;
+font-size: 29px;
+line-height: 35px;
+padding: 60px;
+word-break: break-all;
+}
+
+.container20 {
+	display: flex;
+	padding: 5px;
+	font-family: Meno Banner;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	justify-content: space-between;
+}
+
+.container21 {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	align-content: flex-start;
+}
+
+.container22 {
+	display: flex;
+	padding: 5px;
+	font-family: Meno Banner;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	justify-content: space-between;
+}
+
+.container23 {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	align-content: flex-start;
+}
+
+.container24 {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: center;
+	align-items: center;
+}
+
+.tarot {
+	max-width: 30%;
+	padding-top: 50px;
+}
+
+.minicont5 {
+font-family: Meno Banner;
+font-style: italic;
+font-weight: lighter;
+font-size: 29px;
+line-height: 35px;
+padding: 60px;
+word-break: break-all;
+}
+
+.container25 {
+	display: flex;
+	padding: 5px;
+	font-family: Meno Banner;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 48px;
+	justify-content: space-between;
+}
+
+.container26 {
+font-family: Meno Banner;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 48px;
+}
+
+.container27 {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: center;
+	align-items: center;
+}
+
+.magick {
+	max-width: 50%;
+	padding-top: 50px;
+}
+
+.minicont6 {
+font-family: Meno Banner;
+font-style: italic;
+font-weight: lighter;
+font-size: 29px;
+line-height: 35px;
+padding: 60px;
+word-break: break-all;
+}
+
+.stars {
+font-family: Meno Banner;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+padding-top: 15px;
+}
+
+.bigcontainer {
+display: flex;
+flex-direction: row;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    body { background-color: red; }
+}
+@media screen and (min-width: 401px) and (max-width: 599px) {
+    body { background-color: mediumblue; 
+    	   color: red;  	   
+    }
+    .header {
+    	font-size: 70px;
+    	line-height: 90px;
+  		text-align: center;
+    }
+    .container1 {
+  	display: flex;
+  	font-size: 13px;
+  	line-height: 15px;
+  }
+  .container7 {
+  	font-size: 30px;
+  	line-height: 35px;
+  }
+  .magick {
+  	max-width: 100%;
+  }
+    .themagician {
+  	max-width: 100%;
+  }
+    .historian {
+  	max-width: 100%;
+  }
+    .amulet {
+  	max-width: 100%;
+  }
+    .hecate {
+  	max-width: 100%;
+  }
+    .tarot {
+  	max-width: 100%;
+  }
+  .bigcontainer {
+display: flex;
+flex-direction: column;
+}
+
+}
+@media screen and (min-width: 1000px) {
+    body { background-color: red;
+    		color: black
+}
+    .header {
+    font-size: 150px;
+    line-height: 160px;
+  	text-align: center;
+     }
+    .container1 {
+  	display: flex;
+  	font-size: 30px;
+  	line-height: 35px;
+  }
+    .magick {
+  	max-width: 40%;
+  }
+
+
+
+
+
+
