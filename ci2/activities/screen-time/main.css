@@ -1,0 +1,43 @@
+body {
+	background: #FFF9F4;
+	color: #42c400;
+	font-family: minion-pro-condensed, serif;
+	font-weight: 200;
+	padding-right: 20vw;
+	padding-left: 20vw;
+	font-size: 2vw;
+}
+
+.heading {
+	font-size: 10vw;
+	font-style: italic;
+}
+
+.subheading {
+	font-size: 3vw;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+.question {
+	font-style: italic;
+	font-size: 3vw;
+}
+
+label {
+	font-style: italic;
+	font-size: 3vw;
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	color: #42c400;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
