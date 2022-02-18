@@ -1,0 +1,49 @@
+.name {
+	position: relative;
+	color: white;
+	font-family: bookman-jf-pro,serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 12em;
+	z-index: 2;
+	bottom: 27vw;
+	left: 1vw;
+	line-height: 1em;
+}
+
+.about {
+	position: relative;
+	font-family: bookman-jf-pro,serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 12em;
+	left: 20vw;
+	line-height: 1em;
+	bottom: 55vw;
+	z-index: 2;
+}
+
+#shel {
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
+
+#edge {
+	position: relative;
+	width: 100%;
+	height: auto;
+	bottom: 25vw;
+	z-index: 1;
+}
+
+article {
+	position: relative;
+	font-family: bookman-jf-pro,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3em;
+	margin: 10vw;
+	bottom: 55vw;
+}
+

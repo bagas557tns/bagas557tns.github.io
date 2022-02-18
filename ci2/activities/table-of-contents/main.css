@@ -1,0 +1,20 @@
+body {
+	background: white;
+	font-family: aktiv-grotesk,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2em;
+	margin: 10vw;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
