@@ -1,0 +1,39 @@
+body {
+	font-family: adobe-garamond-pro,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.875vw;
+	background: #EEE6E1;
+	padding: 3vw;
+}
+
+.content {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.list {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 2vw;
+}
+
+.pgs {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	gap: 1vw;
+}
+
+
+.list3 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 4.4vw;
+	}
+

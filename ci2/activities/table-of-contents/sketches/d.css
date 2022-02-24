@@ -1,0 +1,26 @@
+body {
+	font-family: adobe-garamond-pro,serif;
+	font-weight: 400;
+	background: black;
+	color: #EEE6E1;
+	padding: 2vw;
+	font-size: 2.813vw;
+}
+
+.heading {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.content {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+span {
+	font-style: italic;
+}

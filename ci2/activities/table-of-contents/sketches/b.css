@@ -1,0 +1,28 @@
+body {
+	font-family: adobe-garamond-pro,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3.75vw;
+	background: black;
+	color: #EEE6E1;
+	padding: 4vw;
+}
+
+.desc {
+	margin-left: 6vw;
+}
+
+.pgs {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 9.7vw;
+}
+
+.content {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+

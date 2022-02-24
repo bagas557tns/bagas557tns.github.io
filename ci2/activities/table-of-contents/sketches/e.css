@@ -2,16 +2,16 @@ body {
 	font-family: adobe-garamond-pro,serif;
 	background: #EEE6E1;
 	color: black;
-	padding: 1vw;
-	font-size: 4vw;
+	padding: 2vw;
+	text-align: center;
 }
 
-a {
-	text-decoration: none;
-	color: black;
+.bold {
+	font-size: 3vw;
+	font-weight: bold;
 }
 
-a:hover {
+.italic {
+	font-size: 1.875vw;
 	font-style: italic;
 }
-

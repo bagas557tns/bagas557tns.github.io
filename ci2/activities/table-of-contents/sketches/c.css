@@ -1,0 +1,55 @@
+body {
+	font-family: adobe-garamond-pro,serif;
+	font-weight: 400;
+	font-style: normal;
+	background: #EEE6E1;
+	color: black;
+	padding: 3vw;
+}
+
+.desc  {
+	font-size: 1.5vw;
+}
+
+.heading {
+	font-size: 5vw;
+}
+
+header {
+	position: relative;
+	text-align: center;
+}
+
+
+.no {
+	font-size: 5vw;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2vw;
+}
+
+.no5 {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 2vw;
+}
+
+.name {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.name5 {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-evenly;
+}
