@@ -1,0 +1,136 @@
+body {
+	background: #F4F2ED;
+	color: #44603F;
+	font-family: lexia-mono,serif;
+	font-weight: 400;
+	font-style: normal;
+	padding: 2vw;
+	font-size: 1.5vw;
+}
+
+.top {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	gap: 4vw;
+}
+
+hr {
+	border: 1px solid #44603F;
+	margin-top: 1.5vw;
+	margin-bottom: 1.5vw;
+}
+
+img {
+	width: 100%;
+	position: relative;
+}
+
+/*SECTION 1*/
+
+.section1 {
+	/*border: 1px solid red;*/
+	height: 150vh;
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1vw;
+	grid-row-gap: 1vw;
+	z-index: 0;
+}
+
+.place1 {
+	/*border: 1px solid black;*/
+	grid-column: 1/4;
+	grid-row: 1/2;
+}
+
+.city1 {
+	/*border: 1px solid black;*/
+	grid-column: 12/13;
+	grid-row: 1/2;
+}
+
+.p1 {
+	font-size: 1.25vw;
+	/*border: 1px solid green;*/
+	grid-column: 2/7;
+	grid-row: 5/6;
+}
+
+#garland {
+	z-index: 2;
+	grid-column: 1/4;
+	grid-row: 2/4;
+}
+
+#balcony {
+	z-index: 2;
+	grid-column: 9/13;
+	grid-row: 2/4;
+}
+
+#bulb {
+	z-index: -1;
+	grid-column: 3/7;
+	grid-row: 3/4;
+}
+
+#bananas {
+	z-index: -1;
+	grid-column: 8/10;
+	grid-row: 4/6;
+}
+
+/*SECTION 2*/
+
+.section2 {
+	border: 1px solid red;
+	height: 150vh;
+	display: grid;
+	grid-template-rows: repeat(10, 1fr);
+	grid-template-columns: repeat(15, 1fr);
+	grid-column-gap: 2vw;
+	grid-row-gap: 2vw;
+	z-index: 0;
+}
+
+.place2 {
+	/*border: 1px solid black;*/
+	grid-column: 1/6;
+	grid-row: 1/2;
+}
+
+.city2 {
+	/*border: 1px solid black;*/
+	grid-column: 5/7;
+	grid-row: 1/2;
+}
+
+.p2 {
+	font-size: 1.21vw;
+	border: 1px solid green;
+	grid-column: 1/7;
+	grid-row: 2/4;
+	z-index: 0;
+}
+
+#figs {
+	position: relative;
+	grid-column: 8/10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

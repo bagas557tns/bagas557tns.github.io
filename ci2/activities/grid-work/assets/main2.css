@@ -1,0 +1,221 @@
+body {
+	background: #F4F2ED;
+	color: #44603F;
+	font-family: lexia-mono,serif;
+	font-weight: 400;
+	font-style: normal;
+	padding: 2vw;
+	font-size: 1.5vw;
+}
+
+.top {
+	text-align: justify;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+hr {
+	border: 1px solid #44603F;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+
+img {
+	transition: ease-in 0.25s;
+	opacity: 0.8;
+}
+
+img:hover {
+	opacity: 1;
+}
+
+/*SECTION 1*/
+
+.section1 {
+	display: grid;
+	width: 100%;
+	height: 150vh;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.p1 {
+	font-size: 1.25vw;
+	text-align: justify;
+	grid-column: 2/10;
+    width: 35vw;
+    grid-row: 5/7;
+    padding-top: 3vw;
+}
+
+.place1 {
+	text-align: justify;
+	grid-column: 1/4;
+}
+
+.city1 {
+	text-align: justify;
+	grid-column: 10;
+}
+
+#garland {
+	width: 20vw;
+    grid-column: 1/5;
+    grid-row: 2/5;
+    z-index: 0;
+}
+
+#balcony {
+	width: 30vw;
+    grid-column: 8/11;
+    grid-row: 2/4;
+    z-index: 2;
+}
+
+#bulb {
+	width: 25vw;
+    grid-column: 3/6;
+    grid-row: 3/6;
+    z-index: 2;
+}
+
+#bananas {
+	width: 15vw;
+    grid-column: 7/10;
+    grid-row: 5/7;
+    z-index: 1;
+}
+
+/*SECTION 2*/
+
+.section2 {
+	display: grid;
+	width: 100%;
+	height: 125vh;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+}
+
+.p2 {
+	font-size: 1.25vw;
+	text-align: justify;
+	grid-column: 1/10;
+    width: 35vw;
+    grid-row: 1/4;
+    padding-left: 3vw;
+}
+
+.place2 {
+	/*border: 1px solid black;*/
+	text-align: justify;
+	grid-column: 14/17;
+	width: 18vw;
+	justify-self: end;
+	font-size: 1.25vw;
+}
+
+.city2 {
+	/*border: 1px solid black;*/
+	text-align: justify;
+	grid-column: 15/17;
+	width: 7vw;
+	justify-self: end;
+}
+
+#house {
+	width: 25vw;
+	grid-column: 9/14;
+	grid-row: 1/6;
+	z-index: 2;
+	padding-left: 0.25vw;
+}
+
+#guava {
+	width: 60vw;
+	grid-column: 1/15;
+	grid-row: 4/6;
+	z-index: 1;
+}
+
+#figs {
+	width: 25vw;
+	grid-column: 2/8;
+	grid-row: 6/9;
+	z-index: 0;
+}
+
+#paan {
+	width: 30vw;
+	grid-column: 12/17;
+	grid-row: 5/9;
+	z-index: 3;
+}
+
+/*SECTION 3*/
+
+.section3 {
+	display: grid;
+	width: 100%;
+	height: 125vh;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+}
+
+.p3 {
+	font-size: 1.25vw;
+	text-align: justify;
+	grid-column: 8/13;
+    width: 35vw;
+    grid-row: 1/4;
+    /*border: 1px solid black;*/
+}
+
+.place3 {
+	/*border: 1px solid black;*/
+	text-align: justify;
+	grid-column: 1/4;
+	grid-row: 1/2;
+	width: 25vw;
+}
+
+.city3 {
+	/*border: 1px solid black;*/
+	text-align: justify;
+	grid-column: 1/3;
+	grid-row: 2/3;
+	width: 10vw;
+}
+
+#calf {
+	width: 27vw;
+	grid-column: 4/9;
+	grid-row: 1/4;
+	padding-left: 1vw;
+	z-index: 3;
+}
+
+#papaya {
+	width: 32vw;
+	grid-column: 1/6;
+	grid-row: 3/6;
+	z-index: 2;
+}
+
+#velhe {
+	width: 50vw;
+	grid-column: 3/10;
+	grid-row: 6/9;
+	z-index: 1;
+}
+
+#chillies {
+	width: 45vw;
+	grid-column: 7/12;
+	grid-row: 4/7;
+	z-index: 0;
+}
+
+
+
