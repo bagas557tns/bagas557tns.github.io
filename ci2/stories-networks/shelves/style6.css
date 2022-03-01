@@ -1,0 +1,50 @@
+body {
+	background-color: black;
+	font-family: lexia-mono,serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+	padding: 0.5vw;
+}
+
+br {
+	display: none;
+}
+
+.gib {
+	color: #2F2F2F;
+	word-break: break-all;
+}
+
+.section1 {
+	display: none;
+	color: #F25D5A;
+}
+
+.section2 {
+	display: none;
+	color: #79C362;
+}
+
+.section3 {
+	display: none;
+	color: #F79563;
+}
+
+@media (max-width: 500px),(max-height: 264px) {
+
+	body {
+		padding: 25px;
+	}
+
+
+	.gib {
+		display: none;
+	}
+	br, .section1, .section2, .section3 {
+		display: block;
+	}
+}
+
+@media (max-height: 264px)
+
