@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(45deg, black, white);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#dehner {
+    height: 30vw;
+    animation: dehnerRotate 10s ease infinite alternate, dehnerMove 20s ease-in-out infinite alternate, dehnerColor 3s linear infinite alternate;
+}
+
+
+@keyframes dehnerRotate {
+
+  0% {
+    transform: rotate(0.5turn);
+  }
+  60% {
+    transform: rotate(0.7turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes dehnerMove {
+
+    0%{
+        transform: translateX(50%);
+    }
+
+    25%{
+       transform: translateY(50%);
+   }
+
+   50%{
+        transform: translateX(100%);
+    }
+
+    25%{
+       transform: translateY(100%);
+   }
+}
+
+@keyframes dehnerColor {
+
+    0%{
+        fill: black;
+    }
+
+    100%{
+        fill: white;
+    }
+}
+
+
+
