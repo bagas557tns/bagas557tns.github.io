@@ -16,20 +16,95 @@ br {
 	word-break: break-all;
 }
 
+/*SPAN ANIMATION*/
+
+.p {
+  	color: #F25D5A;
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #79C362; }
+  50% { color: #F79563; }
+  100% { color: #8653BA; }
+}
+
+.l {
+  	color: #79C362;
+    animation: color-change2 2s infinite;
+}
+
+@keyframes color-change2 {
+  0% { color: #F25D5A; }
+  50% { color: #8653BA; }
+  100% { color: #F79563; }
+}
+
+.e1 {
+  	color: #F25D5A;
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #79C362; }
+  50% { color: #F79563; }
+  100% { color: #8653BA; }
+}
+
+.a {
+  	color: #79C362;
+    animation: color-change2 2s infinite;
+}
+
+@keyframes color-change2 {
+  0% { color: #F25D5A; }
+  50% { color: #8653BA; }
+  100% { color: #F79563; }
+}
+
+.s {
+  	color: #F25D5A;
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #79C362; }
+  50% { color: #F79563; }
+  100% { color: #8653BA; }
+}
+
+.e2 {
+  	color: #79C362;
+    animation: color-change2 3s infinite;
+}
+
+@keyframes color-change2 {
+  0% { color: #F25D5A; }
+  50% { color: #8653BA; }
+  100% { color: #F79563; }
+}
+
+/*COLOR BLOCKS*/
+
 .section1 {
 	display: none;
 	color: #F25D5A;
+	white-space: pre-wrap;
 }
 
 .section2 {
 	display: none;
 	color: #79C362;
+	white-space: pre-wrap;
 }
 
 .section3 {
 	display: none;
 	color: #F79563;
+	white-space: pre-wrap;
 }
+
+/*MEDIA QUERIES*/
 
 @media (max-width: 500px) {
 
