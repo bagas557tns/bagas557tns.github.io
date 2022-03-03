@@ -25,11 +25,13 @@ br {
 .section2 {
 	display: none;
 	color: #79C362;
+	white-space: pre-wrap;
 }
 
 .section3 {
 	display: none;
 	color: #F79563;
+	white-space: pre-wrap;
 }
 
 @media (max-width: 500px) {
