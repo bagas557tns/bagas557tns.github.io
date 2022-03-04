@@ -110,7 +110,7 @@ br {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 500px) {
+@media (max-height: 266px) and (max-width: 500px) {
 
 	body {
 		padding: 45px;

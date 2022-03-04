@@ -108,11 +108,9 @@ br {
 	white-space: pre-wrap;
 }
 
-
-
 /*MEDIA QUERIES*/
 
-@media (max-width: 500px) {
+@media (max-height: 266px) and (max-width: 500px) {
 
 	body {
 		padding: 45px;
@@ -131,7 +129,8 @@ br {
 
 .p {
   	color: #F25D5A;
-    animation: color-change 2s infinite;
+    animation: color-change 4s infinite;
+    animation-timing-function: steps(3, start);
 }
 
 @keyframes color-change {
