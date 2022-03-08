@@ -13,7 +13,7 @@ body {
 	padding: 0.5vw;
 }
 
-.mobile {
+.mobile, .mobile-rules, .mob1, .mob2, .mob3, .mob4 {
 	display: none;
 }
 
@@ -220,7 +220,7 @@ a {
 	}
 	
 	.container {
-	padding-top: 20vw;
+	padding-top: 30vw;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -238,6 +238,10 @@ a {
 	gap: 30vw;
 }
 
+.mobile-rules, .mob1, .mob2, .mob3, .mob4 {
+	display: inline-block;
+}
+
 	.item {
 	/*border: solid white;*/
 	display: block;
@@ -249,7 +253,7 @@ a {
 }
 
 .mobile {
-	margin-top: 10vw;
+	margin-top: 30vw;
 	width: 160px;
 	background-color: white;
 	color: black;
