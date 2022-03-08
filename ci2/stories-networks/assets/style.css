@@ -54,10 +54,16 @@ img {
 
 a {
 	color: white;
+	text-decoration: none;
+	transition: border 1s ease;
+}
+
+a:hover {
+	border: solid #676767 2.5px;
+	padding: 10px;
 }
 
 .enter {
-	/*border: solid green;*/
 	text-align: center;
 	padding-top: 6vw;
 }
@@ -225,7 +231,7 @@ a {
 	}
 	
 	.container {
-	padding-top: 20vw;
+	padding-top: 2vw;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -235,7 +241,7 @@ a {
 	margin: auto;
 }
 
-	.row1, .row2 {
+	.row1 {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -244,17 +250,16 @@ a {
 }
 
 	.item {
-	/*border: solid white;*/
 	display: block;
 	width: 200px;
 }
 
-.enter, .item3, .item5, .item6, .item7 {
+.enter, .item5, .item6, .item7, .row2 {
 	display: none;
 }
 
 .mobile {
-	margin-top: 10vw;
+	margin-top: 30vw;
 	width: 160px;
 	background-color: white;
 	color: black;

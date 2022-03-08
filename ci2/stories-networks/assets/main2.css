@@ -21,9 +21,12 @@ body {
 a {
 	color: white;
 	text-decoration: none;
+	transition: border 1s ease;
 }
 
 a:hover {
+	border: solid #676767 2.5px;
+	padding: 10px;
 }
 
 .container {
