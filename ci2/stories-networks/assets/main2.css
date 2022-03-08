@@ -1,9 +1,125 @@
+html {
+	/*cursor:url('/assets/cursor1.png'),auto;*/
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:40px;'><text y='80%'>🔍</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+
 body {
-	color: white;
 	background-color: black;
 	font-family: lexia-mono,serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 1.5em;
+	font-size: 1.4vw;
 	padding: 0.5vw;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	/*border: solid white;*/
+	position: relative;
+	width: 100%;
+	margin: auto;
+	margin-top: 10%;
+	gap: 20vw;
+}
+
+.row1, .row2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+/*SPAN ANIMATION*/
+
+.s {
+  	color: #2F2F2F;
+    animation: color-change 2s infinite;
+    animation-timing-function: steps(3, jump-none);
+}
+
+@keyframes color-change {
+  0% { color: #F25D5A; }
+  50% { color: #79C362; }
+  100% { color: #F79563; }
+}
+
+.h {
+  	color: #2F2F2F;
+    animation: color-change2 2s infinite;
+    animation-timing-function: steps(3, jump-none);
+}
+
+@keyframes color-change2 {
+  0% { color: #79C362; }
+  50% { color: #F79563; }
+  100% { color: #E17CC0; }
+}
+
+.e {
+  	color: #2F2F2F;
+    animation: color-change3 2s infinite;
+    animation-timing-function: steps(3, jump-none);
+}
+
+@keyframes color-change3 {
+  0% { color: #F79563; }
+  50% { color: #E17CC0; }
+  100% { color: #FFEB74; }
+}
+
+.l {
+  	color: #2F2F2F;
+    animation: color-change4 2s infinite;
+    animation-timing-function: steps(3, jump-none);
+}
+
+@keyframes color-change4 {
+  0% { color: #E17CC0; }
+  50% { color: #FFEB74; }
+  100% { color: #3FA0FF; }
+}
+
+.f {
+  	color: #2F2F2F;
+    animation: color-change5 2s infinite;
+    animation-timing-function: steps(3, jump-none);
+}
+
+@keyframes color-change5 {
+  0% { color: #FFEB74; }
+  50% { color: #3FA0FF; }
+  100% { color: #8653BA; }
+}
+
+.hash {
+  	color: #2F2F2F;
+    animation: color-change6 2s infinite;
+    animation-timing-function: steps(3, jump-none);
+}
+
+@keyframes color-change6 {
+  0% { color: #3FA0FF; }
+  50% { color: #8653BA; }
+  100% { color: #F25D5A; }
+}
+
+.no {
+  	color: #2F2F2F;
+    animation: color-change7 2s infinite;
+    animation-timing-function: steps(3, jump-none);
+}
+
+@keyframes color-change7 {
+  0% { color: #8653BA; }
+  50% { color: #F25D5A; }
+  100% { color: #79C362; }
 }
