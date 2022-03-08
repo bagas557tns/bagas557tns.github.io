@@ -28,7 +28,7 @@ a:hover {
 	position: relative;
 	width: 100%;
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 12%;
 	gap: 20vw;
 }
 
@@ -123,3 +123,71 @@ a:hover {
   50% { color: #F25D5A; }
   100% { color: #79C362; }
 }
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1000px) {
+	
+	.container {
+	display: block;
+	/*border: solid white;*/
+	position: absolute;
+	font-size: 24px;
+	text-align: center;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.item {
+		padding: 3vw;
+	}
+}
+
+@media (max-width: 700px) {
+	
+	.container {
+	display: block;
+	position: absolute;
+	top: 15%;
+	font-size: 24px;
+	text-align: center;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.item {
+		padding: 3vw;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	.container {
+	display: block;
+	position: relative;
+	font-size: 30px;
+	text-align: center;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.item {
+		padding: 10vw;
+	}
+
+}
+
+
+
+

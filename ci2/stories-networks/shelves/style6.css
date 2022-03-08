@@ -26,6 +26,7 @@ br {
 	word-break: break-all;
 }
 
+
 /*COLOR BLOCKS*/
 
 .section1 {
@@ -36,37 +37,37 @@ br {
 
 .section2 {
 	display: none;
-	color: #79C362;
+	color: #F79563;
 	white-space: pre-wrap;
 }
 
 .section3 {
 	display: none;
-	color: #F79563;
+	color: #FFEB74;
 	white-space: pre-wrap;
 }
 
 .section4 {
 	display: none;
-	color: #E17CC0;
+	color: #79C362;
 	white-space: pre-wrap;
 }
 
 .section5 {
 	display: none;
-	color: #FFEB74;
+	color: #3FA0FF;
 	white-space: pre-wrap;
 }
 
 .section6 {
 	display: none;
-	color: #3FA0FF;
+	color: #8653BA;
 	white-space: pre-wrap;
 }
 
 .section7 {
 	display: none;
-	color: #8653BA;
+	color: #E17CC0;
 	white-space: pre-wrap;
 }
 
@@ -78,37 +79,37 @@ br {
 
 .section9 {
 	display: none;
-	color: #79C362;
+	color: #F79563;
 	white-space: pre-wrap;
 }
 
 .section10 {
 	display: none;
-	color: #F79563;
+	color: #FFEB74;
 	white-space: pre-wrap;
 }
 
 .section11 {
 	display: none;
-	color: #E17CC0;
+	color: #79C362;
 	white-space: pre-wrap;
 }
 
 .section12 {
 	display: none;
-	color: #FFEB74;
+	color: #3FA0FF;
 	white-space: pre-wrap;
 }
 
 .section13 {
 	display: none;
-	color: #3FA0FF;
+	color: #8653BA;
 	white-space: pre-wrap;
 }
 
 .section14 {
 	display: none;
-	color: #8653BA;
+	color: #E17CC0;
 	white-space: pre-wrap;
 }
 
@@ -117,6 +118,10 @@ br {
 	color: #F25D5A;
 	white-space: pre-wrap;
 }
+
+
+
+
 
 /*MEDIA QUERIES*/
 
@@ -135,12 +140,18 @@ br {
 	}
 }
 
+
+
+
+
+
 /*SPAN ANIMATION*/
 
 .p, .e3 {
-  	color: #F25D5A;
+  	color: #2F2F2F;
     animation: color-change 2s infinite;
     animation-timing-function: steps(3, jump-none);
+    animation-delay: 5s;
 }
 
 @keyframes color-change {
@@ -150,9 +161,10 @@ br {
 }
 
 .l, .s2 {
-  	color: #79C362;
+  	color: #2F2F2F;
     animation: color-change2 2s infinite;
     animation-timing-function: steps(3, jump-none);
+    animation-delay: 5s;
 }
 
 @keyframes color-change2 {
@@ -162,9 +174,10 @@ br {
 }
 
 .e1, .i {
-  	color: #F79563;
+  	color: #2F2F2F;
     animation: color-change3 2s infinite;
     animation-timing-function: steps(3, jump-none);
+    animation-delay: 5s;
 }
 
 @keyframes color-change3 {
@@ -174,9 +187,10 @@ br {
 }
 
 .a, .z {
-  	color: #E17CC0;
+  	color: #2F2F2F;
     animation: color-change4 2s infinite;
     animation-timing-function: steps(3, jump-none);
+    animation-delay: 5s;
 }
 
 @keyframes color-change4 {
@@ -186,9 +200,10 @@ br {
 }
 
 .s1, .e4 {
-  	color: #FFEB74;
+  	color: #2F2F2F;
     animation: color-change5 2s infinite;
     animation-timing-function: steps(3, jump-none);
+    animation-delay: 5s;
 }
 
 @keyframes color-change5 {
@@ -198,9 +213,10 @@ br {
 }
 
 .e2, .ex {
-  	color: #3FA0FF;
+  	color: #2F2F2F;
     animation: color-change6 2s infinite;
     animation-timing-function: steps(3, jump-none);
+    animation-delay: 5s;
 }
 
 @keyframes color-change6 {
@@ -210,9 +226,10 @@ br {
 }
 
 .r {
-  	color: #8653BA;
+  	color: #2F2F2F;
     animation: color-change7 2s infinite;
     animation-timing-function: steps(3, jump-none);
+    animation-delay: 5s;
 }
 
 @keyframes color-change7 {
