@@ -1,0 +1,15 @@
+html {
+	min-height: 100%;
+	background-image: url("https://content3.cdnprado.net/imagenes/Documentos/imgsem/b5/b5f6/b5f6ee88-0d2e-4f21-95d0-38cdb082da74/d8c6b1f3-f1c9-42cd-8197-16bdb1729327.jpg");
+	background-size: cover;
+}
+
+body {
+	margin: 3vw;
+}
+
+
+model-viewer {
+  width: 100vw;
+  height: 100vh;
+}
