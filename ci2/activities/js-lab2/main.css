@@ -1,0 +1,43 @@
+body {
+	padding: 5vw;
+	background: black;
+}
+
+.text {
+	padding-bottom: 7vw;
+	text-align: center;
+	color: white;
+	font-family: Helvetica;
+	font-size: 3em;
+}
+
+.clock {
+	margin: 0 auto;
+	text-align: center;
+	width: 20vw;
+	height: 20vw;
+	border: solid white 3px;
+	background: black;
+	border-radius: 100vw;
+	position: relative;
+}
+
+.hand {
+	position: absolute;
+	width: 0.3vw;
+	height: 4vw;
+	background: white;
+
+	bottom: 10vw;
+	left: 10vw;
+	transform-origin: 50% 100%;
+}
+
+.minute {
+	height: 6vw;
+}
+
+.second {
+	height: 8vw;
+	background: white;
+}
