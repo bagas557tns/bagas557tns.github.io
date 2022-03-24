@@ -1,3 +1,7 @@
+html {
+	cursor: url('circke.png'),auto;
+}
+
 body {
 	background: black;
 	color: white;
@@ -24,7 +28,6 @@ body {
 }
 
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
@@ -64,10 +67,82 @@ body {
 
 .fade {
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 4s;
 }
 
 @keyframes fade {
   from {opacity: .04}
   to {opacity: 1}
 }
+
+.box1 {
+	position: relative;
+	text-align: center;
+}
+
+.button1 {
+  font-family: 'Cormorant Garamond', serif;
+  position: relative;
+  margin-top: 7%;
+  background-color: black;
+  border: solid white 1px;
+  color: white;
+  padding: 20px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 60px;
+  transition: ease-in 0.4s;
+}
+
+.button1:hover {
+	background-color: white;
+	color: black;
+}
+
+article {
+	padding-top: 2vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-bottom: 2vw;
+	font-size: 2em;
+}
+
+.box2 {
+	position: relative;
+	text-align: center;
+}
+
+#button2 {
+  font-family: 'Cormorant Garamond', serif;
+  position: relative;
+  background-color: black;
+  border: solid white 1px;
+  color: white;
+  padding: 20px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 60px;
+  transition: ease-in 0.4s;
+}
+
+#button2:hover {
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

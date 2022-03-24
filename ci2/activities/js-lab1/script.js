@@ -21,12 +21,34 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 
-var audio = new Audio('https://bagas557tns.github.io/assets/chirps.mp3');
-audio.play();
 
+
+
+
+function play() {
+var audio = new Audio('assets/chirps.mp3');
+audio.play();
+}
+
+function playAudio() { 
+  audio.play(); 
+} 
+
+function pauseAudio() { 
+  audio.pause(); 
+}
+
+
+
+
+mybutton = document.getElementById("button2");
+window.onscroll = function() {scrollFunction()};
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
