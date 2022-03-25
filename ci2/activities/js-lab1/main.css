@@ -13,7 +13,22 @@ body {
 	text-align: center;
 	font-size: 20vw;
 	font-style: italic;
+  animation-name: fadeIn;
+  animation-duration: 4s;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 * {box-sizing:border-box}
 
@@ -75,6 +90,17 @@ body {
   to {opacity: 1}
 }
 
+.buttons {
+  display: flex;
+  padding-top: 3vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
 .box1 {
 	position: relative;
 	text-align: center;
@@ -100,6 +126,60 @@ body {
 	background-color: white;
 	color: black;
 }
+
+
+.box3 {
+  position: relative;
+  text-align: center;
+}
+
+#button3 {
+  font-family: 'Cormorant Garamond', serif;
+  position: relative;
+  margin-top: 7%;
+  background-color: black;
+  border: solid white 1px;
+  color: white;
+  padding: 20px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 60px;
+  transition: ease-in 0.4s;
+}
+
+#button3:hover {
+  background-color: white;
+  color: black;
+}
+
+.box4 {
+  position: relative;
+  text-align: center;
+}
+
+#button4 {
+  font-family: 'Cormorant Garamond', serif;
+  position: relative;
+  margin-top: 7%;
+  background-color: black;
+  border: solid white 1px;
+  color: white;
+  padding: 20px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 60px;
+  transition: ease-in 0.4s;
+}
+
+#button4:hover {
+  background-color: white;
+  color: black;
+}
+
 
 article {
 	padding-top: 2vw;
