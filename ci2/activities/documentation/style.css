@@ -1,3 +1,7 @@
+html {
+	cursor: url(circle.png), auto;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 }
