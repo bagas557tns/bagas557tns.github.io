@@ -6,6 +6,10 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
+.name {
+	color: black;
+}
+
 .bar {
 	-webkit-transform: translateZ(0);
 	left: 0;
@@ -54,9 +58,13 @@ video, img {
 	font-size: 2.25em;
 }
 
+.fixed2, .bar {
+	color: #e9e3d7;
+
+}
+
 a {
 	text-decoration: none;
-	color: #e9e3d7;
 }
 
 a:hover {
