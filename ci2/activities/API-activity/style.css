@@ -1,0 +1,20 @@
+html {
+  font-family: Helvetica, serif;
+  font-size: 1.5em;
+  padding: 2vw;
+}
+
+body {
+  color: white;
+  background: black;
+  max-width: 32rem;
+}
+
+span {
+  color: red;
+}
+
+.heading {
+  font-size: 2em;
+  padding-bottom: 2vw;
+}
