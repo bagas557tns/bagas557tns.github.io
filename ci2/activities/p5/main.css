@@ -1,0 +1,16 @@
+body {
+  background-image: url(https://static01.nyt.com/images/2013/03/03/magazine/03wmt1/03wmt1-superJumbo-v2.jpg);
+  background-size: 1000px;
+}
+
+img {
+  width: 65%;
+}
+
+div {
+  text-align: center;
+}
+
+canvas {
+  border-radius: 150px;
+}
