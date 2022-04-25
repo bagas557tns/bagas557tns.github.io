@@ -1,0 +1,201 @@
+body {
+  background: #F4F0E5;
+  font-family: din-2014,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*LINKS*/
+
+.plain-link {
+  text-decoration: none;
+  color: black;
+}
+
+.button-link {
+  text-decoration: none;
+  color: black;
+}
+
+.button-link:hover {
+  color: #F4F0E5;
+}
+
+/*NAV BAR*/
+
+nav {
+  padding-bottom: 3px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.tabs {
+  font-size: 40px;
+}
+
+.buttons {
+  display: flex;
+  font-size: 28px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about, .letters {
+  display: inline-block;
+  border: solid 3px black;
+  padding: 5px 25px;
+  border-radius: 80px;
+  transition: ease-in 0.2s;
+}
+
+.about:hover, .letters:hover, .manhattan:hover, .brooklyn:hover, .bronx:hover, .queens:hover {
+  background: black;
+}
+
+hr {
+  border: 1.5px solid black;
+}
+
+/*FILTER BAR*/
+
+.filter {
+  padding-left: 1.5vw;
+  font-size: 40px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.manhattan, .brooklyn, .queens, .bronx {
+  display: inline-block;
+  font-size: 28px;
+  border: solid 3px black;
+  padding: 5px 25px;
+  border-radius: 80px;
+  transition: ease-in 0.2s;
+}
+
+/*ENVELOPE: GENERAL*/
+
+.sender {
+  font-size: 2vw;
+}
+
+.address {
+  font-size: 2vw;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.s1 {  
+  position: absolute;
+  width: 20%;
+  transform: scale(0.5);
+  border: 4px solid black;
+  left: 78%;
+  bottom: 62.5%;
+}
+
+.s2 {  
+  position: absolute;
+  width: 20%;
+  transform: scale(0.5);
+  border: 4px solid black;
+  left: 65%;
+  bottom: 62.5%;
+}
+
+.s3 {  
+  position: absolute;
+  width: 20%;
+  transform: scale(0.5);
+  border: 4px solid black;
+  left: 65%;
+  bottom: 40%;
+}
+
+.s4 {  
+  position: absolute;
+  width: 20%;
+  transform: scale(0.5);
+  border: 4px solid black;
+  left: 78%;
+  bottom: 40%;
+}
+
+.letter {
+  width: 43vw;
+  height: 24vw;
+  padding: 1.5vw;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 16px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+}
+
+/*ALL THE ENVELOPES*/
+
+.letter1 {
+background: #486CC8;
+}
+
+.letter2 {
+background: #F1BD2D;
+}
+
+.letter3 {
+background: #D94F3C;
+}
+
+.letter4 {
+background: #699F50;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 835px) {
+
+nav, .filter-bar, .filter-tabs {
+  justify-content: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

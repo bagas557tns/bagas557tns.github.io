@@ -1,0 +1,136 @@
+body {
+  background: #F4F0E5;
+  font-family: din-2014,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.plain-link {
+  text-decoration: none;
+  color: black;
+}
+
+.button-link {
+  text-decoration: none;
+  color: black;
+}
+
+.button-link:hover {
+  color: #F4F0E5;
+}
+
+
+/*NAV BAR*/
+
+nav {
+  padding-bottom: 3px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.tabs {
+  font-size: 40px;
+}
+
+.buttons {
+  display: flex;
+  font-size: 28px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about, .letters, .home {
+  display: inline-block;
+  border: solid 3px black;
+  padding: 5px 25px;
+  border-radius: 80px;
+  transition: ease-in 0.2s;
+}
+
+.about:hover, .letters:hover, .home:hover, .manhattan:hover, .brooklyn:hover, .bronx:hover, .queens:hover {
+  background: black;
+}
+
+hr {
+  border: 1.5px solid black;
+}
+
+
+/*FILTER BAR*/
+
+.filter {
+  padding-left: 1.5vw;
+  font-size: 40px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.manhattan, .brooklyn, .queens, .bronx {
+  display: inline-block;
+  font-size: 28px;
+  border: solid 3px black;
+  padding: 5px 25px;
+  border-radius: 80px;
+  transition: ease-in 0.2s;
+}
+
+
+/*LETTERS AND DATA*/
+
+
+.person-container {
+  font-size: 28px;
+  width: 320px;
+  height: 520px;
+  padding: 1.5vw;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 16px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  background: #FEFCF5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-container {
+  width: 600px;
+  position: relative;
+  font-size: 28px;
+  left: 400px;
+  bottom: 520px;
+}
+
+.container {
+	padding-top: 50px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 835px) {
+
+nav, .filter-bar, .filter-tabs {
+  justify-content: center;
+}
+
+
+
+
+
