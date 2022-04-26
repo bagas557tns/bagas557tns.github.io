@@ -57,6 +57,43 @@ hr {
 }
 
 
+/*INFO CONTENT*/
+
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.c {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%
+}
+
+.years, .colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 835px) {
@@ -65,50 +102,15 @@ nav, .filter-bar, .filter-tabs {
   justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.letter {
-  width: 320px;
-  height: 520px;
-  padding: 1.5vw;
-  border: 3px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 3px 3px 16px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 17px;
-  background: #FEFCF5;
-}
-
-.container {
-  width: 100vw;
-  gap: 40px;
+.years, .colors {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 100px;
-  margin: 0;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 50px;
 }
 
-.info {
-	font-size: 32px;
-	line-height: 20px;
-}*/
+}
+
 
 
 

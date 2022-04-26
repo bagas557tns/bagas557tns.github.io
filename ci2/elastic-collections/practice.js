@@ -90,7 +90,6 @@ function showPeople() {
     personName.innerHTML = "Sincerely, " + "<br />" + person.fields.name;
     personContainer.append(personName);
 
-
     personContainer.setAttribute("id", "cite cite3");
 
     // creating a new div container
@@ -119,6 +118,9 @@ function showPeople() {
 
   });
 }
+
+
+
 
 
 

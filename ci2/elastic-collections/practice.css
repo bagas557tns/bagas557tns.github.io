@@ -117,14 +117,13 @@ hr {
   position: relative;
   font-size: 28px;
   left: 350px;
-  bottom: 520px;
+  bottom: 580px;
 }
 
 .container {
 	padding-top: 5vw;
   padding-left: 15vw;
 }
-
 
 
 /*MEDIA QUERIES*/
@@ -137,11 +136,7 @@ nav, .filter-bar, .filter-tabs {
 }
 
 @media only screen and (max-width: 1135px) {
-
-  body {
-    background: palegoldenrod;
-  }
-
+  
   .info-container {
   display:block;
   position: relative;
@@ -153,7 +148,7 @@ nav, .filter-bar, .filter-tabs {
 
 .container {
   padding-top: 5vw;
-  padding-left: 15vw;
+  padding-left: 2.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
