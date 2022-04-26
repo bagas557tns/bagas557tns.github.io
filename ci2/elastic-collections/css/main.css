@@ -21,6 +21,11 @@ body {
   color: #F4F0E5;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 /*NAV BAR*/
 
 nav {
@@ -91,14 +96,16 @@ hr {
 /*ENVELOPE: GENERAL*/
 
 .sender {
-  font-size: 2vw;
+  font-size: 2.25vw;
 }
 
 .address {
-  font-size: 2vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 2.25vw;
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -140,6 +147,7 @@ hr {
   bottom: 40%;
 }
 
+
 .letter {
   width: 43vw;
   height: 24vw;
@@ -148,26 +156,138 @@ hr {
   box-sizing: border-box;
   box-shadow: 3px 3px 16px 5px rgba(0, 0, 0, 0.25);
   border-radius: 17px;
+  transform: scale(0.9);
 }
 
-/*ALL THE ENVELOPES*/
+/*ENVELOPE COLORING*/
 
-.letter1 {
-background: #486CC8;
-}
-
-.letter2 {
+/*  MANHATTAN YELLOW  */
+.letter1, .letter2, .letter3, .letter4, 
+.letter6, .letter7, .letter8, .letter10,
+.letter12, .letter13, .letter15, .letter16,
+.letter17, .letter18, .letter19, .letter20,
+.letter21, .letter24, .letter25, .letter26,
+.letter28, .letter30, .letter31,
+.letter32, .letter33, .letter34, .letter37,
+.letter38, .letter40, .letter41, .letter42,
+.letter43, .letter44, .letter45, .letter46,
+.letter47, .letter48, .letter49, .letter50  {
 background: #F1BD2D;
 }
 
-.letter3 {
+/* QUEENS RED */
+.letter5, .letter14, .letter27, .letter39 {
 background: #D94F3C;
 }
 
-.letter4 {
-background: #699F50;
+
+/* BROOKLYN GREEN */
+.letter9, .letter11, .letter22, 
+.letter23, .letter29, .letter36 {
+  background: #699F50;
 }
 
+.letter35 {
+background: #486CC8;
+}
+
+
+/*ENVELOPE POSITIONS*/
+.letter1, .letter11, .letter21, .letter31, .letter41 {
+  transform: rotate(13.9deg) scale(0.9);
+  position: relative;
+  left: 40vw;
+}
+
+.letter2, .letter12, .letter22, .letter32, .letter42 {
+  transform: rotate(-18.32deg) scale(0.9);
+  position: relative;
+  bottom: 20vw;
+}
+
+.letter3, .letter13, .letter23, .letter33, .letter43 {
+  transform: rotate(56.25deg) scale(0.9);
+  position: relative;
+  bottom: 25vw;
+  left: 25vw;
+}
+
+.letter4, .letter14, .letter24, .letter34, .letter44 {
+transform: rotate(6.69deg) scale(0.9);
+  position: relative;
+  bottom: 43vw;
+  left: 1vw;
+}
+
+.letter5, .letter15, .letter25, .letter35, .letter45 {
+transform: rotate(-10.72deg) scale(0.9);
+  position: relative;
+  bottom: 47vw;
+  left: 33vw;
+  z-index: -8;
+}
+
+.letter6, .letter16, .letter26, .letter36, .letter46 {
+  transform: rotate(-36.25deg) scale(0.9);
+  position: relative;
+  bottom: 67vw;
+  left: -5vw;
+  z-index: -9;
+}
+
+.letter7, .letter17, .letter27, .letter37, .letter47 {
+  transform: rotate(16.25deg) scale(0.9);
+  position: relative;
+  bottom: 75vw;
+  left: 20vw;
+}
+
+.letter8, .letter18, .letter28, .letter38, .letter48 {
+  transform: rotate(-6.25deg) scale(0.9);
+  position: relative;
+  bottom: 85vw;
+  left: -2vw;
+}
+
+.letter9, .letter19, .letter29, .letter39, .letter49 {
+  transform: rotate(-26.25deg) scale(0.9);
+  position: relative;
+  bottom: 106vw;
+  left: 35vw;
+}
+
+.letter10, .letter20, .letter30, .letter40, .letter50 {
+  position: relative;
+  bottom: 110vw;
+  left: 1vw;
+}
+
+.group2 {
+  position: relative;
+  bottom: 120vw;
+}
+
+.group3 {
+  position: relative;
+  bottom: 240vw;
+}
+
+.group4 {
+  position: relative;
+  bottom: 360vw;
+}
+
+.group5 {
+  position: relative;
+  bottom: 480vw;
+}
+
+.container {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: block;
+}
 
 
 

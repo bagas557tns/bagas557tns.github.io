@@ -55,16 +55,11 @@ function showPeople() {
   console.log("showPeople()");
   people.forEach((person) => {
 
-    // add names of people
-  	// var personName = document.createElement("h1");
-  	// personName.innerText = person.fields.name;
-  	// document.body.append(personName); 
-
     // creating a new letter container
     // this is where the letter info will go
     var personContainer = document.createElement("div");
     personContainer.classList.add("person-container");
-    document.querySelector(".container").append(personContainer)
+    document.querySelector(".container1").append(personContainer)
 
     // adding dates to our person containers
     var personDate = document.createElement("div");
@@ -90,42 +85,4 @@ function showPeople() {
     personName.innerHTML = "Sincerely, " + "<br />" + person.fields.name;
     personContainer.append(personName);
 
-
-    personContainer.setAttribute("id", "cite cite3");
-
-    // creating a new div container
-    // this is where the other info will go
-    var infoContainer = document.createElement("div");
-    infoContainer.classList.add("info-container");
-    document.querySelector(".container").append(infoContainer)
-
-    // adding areas to our info containers
-    var infoArea = document.createElement("div");
-    infoArea.classList.add("info-area");
-    infoArea.innerText = "Currently in: " + person.fields.area;
-    infoContainer.append(infoArea);
-
-    // adding times to our info containers
-    var infoTime = document.createElement("div");
-    infoTime.classList.add("info-time");
-    infoTime.innerText = "Living in New York for: " + person.fields.time;
-    infoContainer.append(infoTime);
-
-    // adding dreams to our info containers
-    var infoDream = document.createElement("div");
-    infoDream.classList.add("info-dream");
-    infoDream.innerText = "Would rather live in: " + person.fields.dream;
-    infoContainer.append(infoDream);
-
-  });
-}
-
-
-
-
-
-
-
-
-
-
+ 
