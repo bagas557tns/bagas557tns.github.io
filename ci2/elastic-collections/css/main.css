@@ -1,3 +1,7 @@
+html {
+  cursor: url('assets/cursor.png'), auto;
+}
+
 body {
   background: #F4F0E5;
   font-family: din-2014,sans-serif;
@@ -109,6 +113,11 @@ hr {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  transition: ease-in 0.2s;
+}
+
+.address:hover {
+  text-decoration: underline;
 }
 
 .s1 {  
@@ -187,6 +196,8 @@ background: #D94F3C;
   background: #699F50;
 }
 
+
+/* BRONX BLUE */
 .letter35 {
 background: #486CC8;
 }
@@ -224,7 +235,7 @@ transform: rotate(-10.72deg) scale(0.9);
   position: relative;
   bottom: 47vw;
   left: 33vw;
-  z-index: -8;
+  /*z-index: -8;*/
 }
 
 .letter6, .letter16, .letter26, .letter36, .letter46 {
@@ -232,7 +243,7 @@ transform: rotate(-10.72deg) scale(0.9);
   position: relative;
   bottom: 67vw;
   left: -5vw;
-  z-index: -9;
+  /*z-index: -9;*/
 }
 
 .letter7, .letter17, .letter27, .letter37, .letter47 {
@@ -295,7 +306,7 @@ transform: rotate(-10.72deg) scale(0.9);
 
 @media only screen and (max-width: 835px) {
 
-nav, .filter-bar, .filter-tabs {
+nav, .filter-bar, .filter-tabs, .header {
   justify-content: center;
 }
 
