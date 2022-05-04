@@ -52,14 +52,13 @@ nav {
   transition: ease-in 0.2s;
 }
 
-.about:hover, .letters:hover, .home:hover, .manhattan:hover, .brooklyn:hover, .bronx:hover, .queens:hover {
+.about:hover, .letters:hover, .home:hover {
   background: black;
 }
 
 hr {
   border: 1.5px solid black;
 }
-
 
 /*FILTER BAR*/
 
@@ -89,8 +88,29 @@ hr {
   transition: ease-in 0.2s;
 }
 
+.manhattan:hover {
+  background: #F1BD2D;
+  border: solid 3px #F1BD2D;
+}
+
+.brooklyn:hover {
+  background: #699F50;
+  border: solid 3px #699F50; 
+}
+
+.bronx:hover {
+  background: #486CC8;
+  border: solid 3px #486CC8;   
+}
+
+.queens:hover {
+  background: #D94F3C;
+  border: solid 3px #D94F3C;  
+}
+
 
 /*LETTERS AND DATA*/
+
 
 
 .person-container {
@@ -116,8 +136,8 @@ hr {
   display:inline-block;
   position: relative;
   font-size: 28px;
-  left: 350px;
-  bottom: 580px;
+/*  left: 350px;
+  bottom: 580px;*/
 }
 
 .container {
@@ -140,9 +160,9 @@ nav, .filter-bar, .filter-tabs {
   .info-container {
   display:block;
   position: relative;
-  font-size: 3.25vw;
-  left: 0px;
-  bottom: 5px;
+/*  font-size: 3.25vw;*/
+/*  left: 0px;
+  bottom: 5px;*/
 }
 
 
@@ -174,8 +194,6 @@ nav, .filter-bar, .filter-tabs {
 }
 
 
-
-}
 
 
 

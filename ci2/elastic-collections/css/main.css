@@ -1,5 +1,5 @@
 html {
-  cursor: url('assets/cursor.png'), auto;
+  cursor: url('assets/asset1.png'), auto;
 }
 
 body {
@@ -61,7 +61,7 @@ nav {
   transition: ease-in 0.2s;
 }
 
-.about:hover, .letters:hover, .manhattan:hover, .brooklyn:hover, .bronx:hover, .queens:hover {
+.about:hover, .letters:hover {
   background: black;
 }
 
@@ -97,6 +97,22 @@ hr {
   transition: ease-in 0.2s;
 }
 
+.manhattan:hover {
+  background: #F1BD2D;
+}
+
+.brooklyn:hover {
+  background: #699F50;
+}
+
+.bronx:hover {
+  background: #486CC8;
+}
+
+.queens:hover {
+  background: #D94F3C;
+}
+
 
 
 .marquee {
@@ -124,17 +140,13 @@ hr {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee2 18s linear infinite;
+  animation: marquee2 15s linear infinite;
   animation-direction: reverse;
 }
 
 @keyframes marquee2 {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
-}
-
-.track:hover, .track2:hover {
-  animation-play-state: paused;
 }
 
 

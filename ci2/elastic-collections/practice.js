@@ -1,6 +1,7 @@
 // is my file linked?
 // console.log("is this working?");
 
+
 // loading the airtable library, calling it "Airtable"
 var Airtable = require("airtable")
 // console.log(Airtable)
@@ -40,6 +41,7 @@ function gotAllPeople(err) {
   // call functions to log and show the books
   consoleLogPeople();
   showPeople();
+  anchorTag();
 }
 
 // just loop through the books and console.log them
@@ -53,7 +55,8 @@ function consoleLogPeople() {
 // look through our airtable data and create elements for everything
 function showPeople() {
   console.log("showPeople()");
-  people.forEach((person) => {
+  people.forEach((person, index) => {
+    console.log(person.fields.record_id, index)
 
     // add names of people
   	// var personName = document.createElement("h1");
@@ -65,6 +68,8 @@ function showPeople() {
     var personContainer = document.createElement("div");
     personContainer.classList.add("person-container");
     document.querySelector(".container").append(personContainer)
+
+    personContainer.setAttribute("id", index);
 
     // adding dates to our person containers
     var personDate = document.createElement("div");
@@ -90,7 +95,10 @@ function showPeople() {
     personName.innerHTML = "Sincerely, " + "<br />" + person.fields.name;
     personContainer.append(personName);
 
-    personContainer.setAttribute("id", "cite cite3");
+    
+// personContainer.setAttribute("id", index);
+
+// console.log(person.fields.recor)
 
     // creating a new div container
     // this is where the other info will go
@@ -115,14 +123,36 @@ function showPeople() {
     infoDream.classList.add("info-dream");
     infoDream.innerText = "Would rather live in: " + person.fields.dream;
     infoContainer.append(infoDream);
-
   });
+}
+
+function onLinkClick() {
+  document.getElementById(window.location.hash.split("#")[1]).scrollIntoView();
+}
+
+function anchorTag() {
+  onLinkClick();
+  console.log(window.location.hash.split("#")[1]);
 }
 
 
 
 
 
+
+    // let personContainer = document.querySelectorAll(".person-container");
+
+    // for (i = 0; i < 50; i++) {
+    //   // console.log("Test" + personContainer[i]);
+    //   personContainer.setAttribute("id", "bruh");
+    // } 
+
+
+
+    // var link = document.createElement("a");
+    // link.setAttribute("id", index);
+    // link.classList.add("anchor-tag")
+    // personContainer.append(link);
 
 
 

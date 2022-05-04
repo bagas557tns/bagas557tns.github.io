@@ -1,0 +1,25 @@
+
+body {
+  background: black;
+  font-family: monospace;
+  color: white;
+}
+
+
+.circle {
+  position: absolute;
+  background-color: black;
+  border: 2px solid white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  }
+
+.wrapper {
+  margin-top: 20%;
+  text-align: center; 
+}
+
+* {
+  cursor: none;
+}
