@@ -1,0 +1,75 @@
+body {
+	font-family: 'Cormorant', serif;
+	background: #fae4d3;
+	padding: 30px;
+}
+
+#poster {
+	margin: 0 auto;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 400px;
+	height: 600px;
+	background-color: white;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+
+#matisse {
+	text-align: center;
+	font-size: 70px;
+	letter-spacing: 2px;
+}
+
+#desc {
+	font-style: italic;
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#cap {
+	text-align: center;
+	font-size: 40px;
+}
+
+#space {
+	display: flex;
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #eeebe5;
+  z-index: 3;
+  overflow: hidden;
+}
+
+#circle1 {
+ width: 50px;
+ height: 42px;
+ border-radius: 50%;
+ position: relative;
+ top: 40px;
+ left: 30px;
+ background-color: lightsalmon;
+}
+
+#leaf {
+	width: 225px;
+	height: 225px;
+	position: relative;
+	fill: lightsalmon;
+	 top: 40px;
+ left: 30px;
+}
+
+#circle2 {
+ width: 100px;
+ height:80px;
+ border-radius: 50%;
+ position: relative;
+ top: 40px;
+ left: 30px;
+ background-color: lightsalmon;
+}
