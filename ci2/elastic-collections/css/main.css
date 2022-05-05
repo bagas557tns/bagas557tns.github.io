@@ -258,6 +258,7 @@ background: #486CC8;
 
 
 /*ENVELOPE POSITIONS*/
+
 .letter1, .letter11, .letter21, .letter31, .letter41 {
   transform: rotate(13.9deg) scale(0.9);
   position: relative;
@@ -353,7 +354,6 @@ transform: rotate(-10.72deg) scale(0.9);
   padding-right: 10%;
   display: block;
 }
-
 
 
 /*MEDIA QUERIES*/

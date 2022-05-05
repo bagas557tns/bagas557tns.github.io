@@ -1,7 +1,6 @@
 // is my file linked?
 // console.log("is this working?");
 
-
 // loading the airtable library, calling it "Airtable"
 var Airtable = require("airtable")
 // console.log(Airtable)
@@ -95,10 +94,75 @@ function showPeople() {
     personName.innerHTML = "Sincerely, " + "<br />" + person.fields.name;
     personContainer.append(personName);
 
-    
-// personContainer.setAttribute("id", index);
+    // get borough field from airtable
+    // loop through the array and add each genre
+    // a class to the song container 
+    var personBorough = person.fields.borough;
+    personBorough.forEach(function(borough){
+      personContainer.classList.add(borough)
+    })
 
-// console.log(person.fields.recor)
+    // add event listener to our filter 
+    // to add an active class to our letters
+
+    var filterBronx = document.querySelector(".bronx-button");
+    filterBronx.addEventListener("click", function(){
+
+
+      if (personContainer.classList.contains("bronx")) {
+        personContainer.style.display = "flex";
+
+      } else {
+        personContainer.style.display = "none";
+      }
+    })
+
+    var filterManhattan = document.querySelector(".manhattan-button");
+    filterManhattan.addEventListener("click", function(){
+
+
+      if (personContainer.classList.contains("manhattan")) {
+        personContainer.style.display = "flex";
+
+      } else {
+        personContainer.style.display = "none";
+      }
+    })
+
+    var filterBrooklyn = document.querySelector(".brooklyn-button");
+    filterBrooklyn.addEventListener("click", function(){
+
+
+      if (personContainer.classList.contains("brooklyn")) {
+        personContainer.style.display = "flex";
+
+      } else {
+        personContainer.style.display = "none";
+      }
+    })
+
+    var filterQueens = document.querySelector(".queens-button");
+    filterQueens.addEventListener("click", function(){
+
+
+      if (personContainer.classList.contains("queens")) {
+        personContainer.style.display = "flex";
+
+      } else {
+        personContainer.style.display = "none";
+      }
+    })
+
+    var filterReset = document.querySelector(".reset-js")
+    filterReset.addEventListener("click", function(){
+      personContainer.style.display = "flex";
+    })
+
+
+
+
+
+// INFO SECTION //
 
     // creating a new div container
     // this is where the other info will go
@@ -123,8 +187,70 @@ function showPeople() {
     infoDream.classList.add("info-dream");
     infoDream.innerText = "Would rather live in: " + person.fields.dream;
     infoContainer.append(infoDream);
+
+    var infoBorough = person.fields.borough;
+    infoBorough.forEach(function(borough){
+      infoContainer.classList.add(borough)
+    })
+
+    var filterManhattanInfo = document.querySelector(".manhattan-button");
+    filterManhattanInfo.addEventListener("click", function(){
+
+
+      if (infoContainer.classList.contains("manhattan")) {
+        infoContainer.style.display = "inline-block";
+
+      } else {
+        infoContainer.style.display = "none";
+      }
+    })
+
+    var filterBronxInfo = document.querySelector(".bronx-button");
+    filterBronxInfo.addEventListener("click", function(){
+
+
+      if (infoContainer.classList.contains("bronx")) {
+        infoContainer.style.display = "inline-block";
+
+      } else {
+        infoContainer.style.display = "none";
+      }
+    })  
+
+    var filterBrooklynInfo = document.querySelector(".brooklyn-button");
+    filterBrooklynInfo.addEventListener("click", function(){
+
+
+      if (infoContainer.classList.contains("brooklyn")) {
+        infoContainer.style.display = "inline-block";
+
+      } else {
+        infoContainer.style.display = "none";
+      }
+    })  
+
+    var filterQueensInfo = document.querySelector(".queens-button");
+    filterQueensInfo.addEventListener("click", function(){
+
+
+      if (infoContainer.classList.contains("queens")) {
+        infoContainer.style.display = "inline-block";
+
+      } else {
+        infoContainer.style.display = "none";
+      }
+    }) 
+
+    var filterReset = document.querySelector(".reset-js")
+    filterReset.addEventListener("click", function(){
+      infoContainer.style.display = "inline-block";
+    }) 
+
   });
 }
+
+
+
 
 function onLinkClick() {
   document.getElementById(window.location.hash.split("#")[1]).scrollIntoView();
@@ -134,11 +260,6 @@ function anchorTag() {
   onLinkClick();
   console.log(window.location.hash.split("#")[1]);
 }
-
-
-
-
-
 
     // let personContainer = document.querySelectorAll(".person-container");
 
@@ -153,6 +274,36 @@ function anchorTag() {
     // link.setAttribute("id", index);
     // link.classList.add("anchor-tag")
     // personContainer.append(link);
+
+let mybutton = document.getElementById("topButton");
+
+window.onscroll = function() {
+  scrollFunction()};
+
+  function scrollFunction() {
+   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// function topFunction() {
+//   document.body.scrollTop = 0; 
+//   document.documentElement.scrollTop = 0;
+// }
+
+function topFunction() {
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
+
+
+
+
+
+
+
+
 
 
 
