@@ -1,13 +1,12 @@
 body {
 	background: blue;
-/*	font-family: Tahoma, sans-serif;
-*/	font-family: Times New Roman, serif;
+	font-family: Times New Roman, serif;
 	padding: 40px;
-	background-image: url(https://i.natgeofe.com/n/2a12edda-3f79-45d1-b9bc-7ccc1499e5cf/1230_16x9.jpg?w=1200);
+	background-image: url(https://c.tenor.com/OWavF62qCpEAAAAC/night-sky-tranquilo.gif);
 	/*background-image: url(https://papers.co/wallpaper/papers.co-bl69-art-anime-sky-33-iphone6-wallpaper.jpg);*/
 }
 
-.container {
+#container {
   	position: absolute;
   	top: 0; bottom: 0; left: 0; right: 0;
   	margin: auto;    
@@ -24,7 +23,7 @@ body {
     border-bottom-color: #403c3c;
 }
 
-.window {
+#window {
 	position: relative;
 	width: 565px;
 	height: 570px;
@@ -50,7 +49,7 @@ body {
 /*	justify-content: space-evenly;
 */}
 
-.button1, .button2, .button3 {
+#button1, #button2, #button3 {
 	width: 300px;
 	height: 50px;
 	background: yellow;
@@ -72,7 +71,7 @@ body {
 
 }
 
-.button1:active, .button2:active, .button3:active {
+#button1:active, #button2:active, #button3:active {
     border-bottom-color: white;
     border-right-color: #dfdfdf;
     border-left-color: darkgrey;
@@ -101,36 +100,44 @@ p {
 	padding-right: 15px;
 }
 
-.top-text {
+#top-text {
+	font-family: 'Charm', cursive; 
+	font-size: 66px;
 	position: absolute;
 	top: 10px;
 	z-index: 999;
-	background: yellow;
 	text-align: center;
+	color: white;
+	-webkit-text-stroke: 1px magenta;
 }
 
-.bottom-text {
+#bottom-text {
+	font-family: 'Charm', cursive;
+	font-size: 54px;
 	position: absolute;
 	bottom: 10px;
 	z-index: 999;
 	text-align: center;
-	background: yellow;
-
+	color: white;
+	-webkit-text-stroke: 1px magenta;
 }
 
 
-.background-image {
+#background{
 	    position: relative;
-	    z-index: -99;
 
 }
 
 
-.fish {
+#object {
 	position: absolute;
+  	top: 0; bottom: 0; left: 0; right: 0;
+  	margin: auto;;
 	z-index: 100;
-	width: 50%;
+	width: 100%;
+	text-align: center;
 }
+
 
 
 
@@ -146,7 +153,7 @@ p {
 		ma
 	}
 
-	.window {
+	.window {s
 		position: relative;
 		width: 95%;
 		height: auto;
