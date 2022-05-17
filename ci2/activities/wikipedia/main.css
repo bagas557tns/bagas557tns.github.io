@@ -1,14 +1,16 @@
 .name {
 	position: relative;
-	color: white;
+	color: black;
 	font-family: bookman-jf-pro,serif;
 	font-weight: 400;
 	font-style: italic;
-	font-size: 12em;
-	z-index: 2;
-	bottom: 27vw;
-	left: 1vw;
+	font-size: 12vw;
+/*	bottom: 27vw;
+	left: 1vw;*/
 	line-height: 1em;
+	text-align: center;
+/*	background: red;*/
+	padding-top: 10px;
 }
 
 .about {
@@ -16,24 +18,24 @@
 	font-family: bookman-jf-pro,serif;
 	font-weight: 400;
 	font-style: italic;
-	font-size: 12em;
-	left: 20vw;
+	font-size: 12vw;
+	left: 25vw;
 	line-height: 1em;
-	bottom: 55vw;
-	z-index: 2;
+	bottom: 30vw;
+	z-index: 4;
+	display: inline-block;
 }
 
 #shel {
 	width: 100%;
 	height: auto;
-	z-index: -1;
+	padding-bottom: 10px;
 }
 
 #edge {
 	position: relative;
 	width: 100%;
 	height: auto;
-	bottom: 25vw;
 	z-index: 1;
 }
 
@@ -43,7 +45,7 @@ article {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 3em;
-	margin: 10vw;
-	bottom: 55vw;
+	padding: 5vw;
+	bottom: 25vw;
 }
 
