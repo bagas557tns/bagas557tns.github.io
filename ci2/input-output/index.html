@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Caveat:wght@600&family=Charm&family=Rancho&family=Yeseva+One&display=swap" rel="stylesheet">
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Whatsapp Dream Machine</title>
+	<title>The Whatsapp Generator</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="html2canvas.min.js" type="text/javascript"></script>
 </head>
@@ -27,9 +28,9 @@
 			<div id="button1"  >Generate Background</div>
 			<div id="button2"  >Generate Foreground</div>
 			<div id="button3" onclick="genText();" >Generate Text</div>
-			<div id="button4" onclick="genFont();" >Generate Text Style</div>
-			<div id="button5">Download</div>
-			<div onclick="window.open('https://www.are.na/shravani-bagawde', '_blank');" id="button6">Share</div>
+			<div id="button4" onclick="genFont(); genColor(); genBorder();" >Generate Text Style</div>
+			<div id="button5" onclick="popUp()">Download</div>
+			<div onclick="window.open('https://www.are.na/shravani-bagawde/whatsapp-generator', '_blank');" id="button6">Share</div>
 			<div class="field">
 				<p>Have you ever wondered where those cryptic "Good Morning" messages your grandmother sends even come from? Click the "Generate" buttons to find out.</p> 
 			</div>

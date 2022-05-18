@@ -101,18 +101,23 @@ function genText() {
 }
 
 function genFont() {
-var fontType = [ "Arial", "Verdana", "Helvetica", "Georgia"];
+var fontType = [ "Charm", "Caveat", "Yeseva One", "Rancho", "Amita"];
 var num;
 num=Math.floor(Math.random()*fontType.length);
 document.getElementById("bottom-text").style.fontFamily =fontType[num];
 }
 
+function genColor() {
+var fontColor = [ "magenta", "white", "black", "orange"];
+var col;
+col=Math.floor(Math.random()*fontColor.length);
+document.getElementById("bottom-text").style.color =fontColor[col];
+}
 
 
-
-
-
-
+function popUp() {
+	alert("Please take a screenshot of the generated content within the window");
+}
 
 // html2canvas(document.querySelector("#window")).then(canvas => {
 //     document.body.appendChild(canvas)
