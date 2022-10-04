@@ -3,16 +3,65 @@ html {
 }
 
 body {
-	background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
-    background: rgba(204, 204, 204, 0.5);
-	font-family: 'Helvetica', 'Arial', sans-serif;
-	padding: 2vw;
+/*	background: rgb(204, 204, 204);  Fallback for older browsers without RGBA-support 
+    background: rgba(204, 204, 204, 0.5);*/
+
+    background: whitesmoke;
+	font-family: 'Times New Roman', serif;
+	padding: 20px;
 	font-size: 35px;
+	color: blue;
 }
+
+hr {
+	border: 1px solid blue;
+}
+
+ul {
+	max-height: 24vw;
+    overflow-y: scroll ;
+}
+
+.work {
+	padding-top: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	gap: 50px;
+	justify-content: space-between;
+
+
+}
+
+.intro {
+	padding-bottom: 20px;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+.container1, .container2 {
+	    border-right: 2px solid blue;
+}
+
+
+
+
+
+
+
+
+
 
 a {
 	text-decoration: none;
-	color: black;
+}
+
+a:visited {
+	color: blue;
 }
 
 a:hover {

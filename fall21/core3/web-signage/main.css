@@ -1,0 +1,34 @@
+body {
+	background: #fff; 
+	padding: 30px;
+}
+
+.test1 {
+	font-family: GTPressura; 
+	font-weight: bold; 
+	src: url('assets/gt-pressura-bold-web-webfont.ttf') format('truetype');
+	font-size: 3rem;
+	color: black;
+}
+
+.test2 {
+	font-family: GTPressura;  
+	src: url('assets/gt-pressura-regular-web-webfont.ttf') format('truetype');
+	font-size: 3rem;
+	color: #d02f2e;
+}
+
+.test3 {
+	font-family: GTPressura;  
+	src: url('assets/gt-pressura-regular-web-webfont.ttf') format('truetype');
+	font-size: 3rem;
+	color: #0e7d4b;
+}
+
+
+.test4 {
+	font-family: TimesDotItalic; 
+	font-style: italic; 
+	src: url('assets/times-dot-italic.otf') format('opentype');
+	font-size: 3rem;	
+}
