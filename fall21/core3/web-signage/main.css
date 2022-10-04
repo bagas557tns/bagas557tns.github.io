@@ -1,3 +1,11 @@
+
+@font-face { 
+font-family: GTPressura;  
+src: url('assets/gt-pressura-regular-web-webfont.ttf') format('truetype'); 
+}
+
+
+
 body {
 	background: #fff; 
 	padding: 30px;
