@@ -1,0 +1,172 @@
+html {
+	background: #000000;
+	user-select: none;
+}
+
+body {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 200px;
+	padding-left: 200px;
+}
+
+canvas {
+	position: absolute;
+	border-radius: 500px;
+	left: 40%;
+	top: 10%;
+}
+
+.glow {
+	width: 10vw;
+	text-align: center;
+	position: relative;
+	background: black;
+	display: inline-block;
+  	font-size: 2vw;
+  	padding: 15px;
+  	color: limegreen;
+  	border: 5px solid limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+  	transition: ease-in-out 0.4s;
+  	animation: glow 3s ease-in-out infinite alternate;
+}
+
+.glow:hover {
+    background: limegreen;
+    color: black;
+}
+
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0e3d09, 0 0 20px #0e3d09, 0 0 30px #0e3d09, 0 0 40px #0e3d09;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #19f202, 0 0 30px #19f202, 0 0 40px #19f202;
+  }
+}
+
+.prompt {
+	position: relative;
+	color: limegreen;
+	display: block;
+	width: 17.5vw;
+	font-size: 1.5vw;
+	text-align: center;
+  	padding: 15px;
+  	color: limegreen;
+  	border: 5px solid limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+}
+
+
+.name {
+	font-style: italic;
+}
+
+.note {
+	position: relative;
+	color: limegreen;
+	display: block;
+	width: 17.5vw;
+	font-size: 1.5vw;
+	text-align: center;
+  	padding: 15px;
+  	color: limegreen;
+  	border: 5px solid limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+}
+
+.container {
+	padding-bottom: 200px;
+}
+
+
+.germ {
+	display: inline-block;
+	background: limegreen;
+    width: 2.5vw;
+    height: 1vw;
+    border-radius: 300px;
+}
+
+.germ1 {
+	position: absolute;
+	transform: rotate(45deg);
+	top: 130px;
+	left: 225px;
+	z-index: 20;
+    animation: bacteria1 2s linear infinite alternate;
+}
+
+.germ2 {
+	position: absolute;
+	transform: rotate(-75deg);
+	top: 200px;
+	left: 325px;
+	z-index: 21;
+    animation: bacteria2 2s linear infinite alternate;
+}
+
+.germ3 {
+	position: absolute;
+	transform: rotate(160deg);
+	top: 220px;
+	left: 420px;
+	z-index: 21;
+    animation: bacteria3 2s linear infinite alternate;
+}
+
+
+@keyframes bacteria1 {
+   0% { transform: rotate(45deg); box-shadow: 0px 0px 5px 0.05px limegreen;}
+   20% { transform: rotate(55deg); }
+   30% { transform: rotate(45deg); }
+   40% { transform: rotate(55deg); }
+   50% { transform: rotate(45deg); }
+   60% { transform: rotate(55deg); }
+   70% { transform: rotate(45deg); }
+   80% { transform: rotate(55deg); }
+   90% { transform: rotate(45deg); }
+   100% { transform: rotate(55deg); box-shadow: 0px 0px 10px 3px limegreen;}
+}
+
+
+
+@keyframes bacteria2 {
+   0% { transform: rotate(-75deg); box-shadow: 0px 0px 5px 0.05px limegreen;}
+   20% { transform: rotate(-85deg); }
+   30% { transform: rotate(-75deg); }
+   40% { transform: rotate(-85deg); }
+   50% { transform: rotate(-75deg); }
+   60% { transform: rotate(-85deg); }
+   70% { transform: rotate(-75deg); }
+   80% { transform: rotate(-85deg); }
+   90% { transform: rotate(-75deg); }
+   100% { transform: rotate(-85deg); box-shadow: 0px 0px 10px 3px limegreen;}
+}
+
+
+
+@keyframes bacteria3 {
+   0% { transform: rotate(160deg); box-shadow: 0px 0px 5px 0.05px limegreen;}
+   20% { transform: rotate(170deg); }
+   30% { transform: rotate(160deg); }
+   40% { transform: rotate(170deg); }
+   50% { transform: rotate(160deg); }
+   60% { transform: rotate(170deg); }
+   70% { transform: rotate(160deg); }
+   80% { transform: rotate(170deg); }
+   90% { transform: rotate(160deg); }
+   100% { transform: rotate(170deg); box-shadow: 0px 0px 10px 3px limegreen;}
+}
+
+
+
+

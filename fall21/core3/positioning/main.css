@@ -1,0 +1,78 @@
+body {
+	background: #000000;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+/*default positioning is static; 
+things are positioned according 
+to the flow of the page and 
+cannot be adjusted*/
+
+/*relative positioning:; can be
+adjusted*/
+
+#main {
+	position: relative;
+	background: #44D62C;
+	width: 40%;
+	height: 100vh;
+	top: 57px;
+	left: 5%;
+	float: left;
+	z-index: 3;
+}
+
+#main2 {
+	position: relative;
+	background: blue;
+	width: 40%;
+	height: 100vh;
+	top: 57px;
+	left: 5%;
+	float: left;
+	margin-left: 3%;
+	padding: 50px;
+	z-index: 2;
+}
+
+/*fixed positioning:  stays in the
+same spot of the screen, despite any
+scrolling*/
+
+#menu {
+	position: fixed;
+	background: white;
+	top: 100px;
+	left: 175px;
+	z-index: 10;
+}
+
+
+/*absolute positioning:  similar to fixed,
+but is relative to parent div, not the 
+screen*/
+
+#submenu {
+	position: absolute;
+	background: hotpink;
+	top: 75px;
+	left: 70px;
+}
+
+/*positioning of 'submenu' element is
+defined by the positioning of the 'main2' 
+element (75px away from the top of the parent
+div) */
+
+
+
+
+
+
+
+
+
+
+

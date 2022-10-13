@@ -1,0 +1,466 @@
+::selection {
+  background: yellow; /* WebKit/Blink Browsers */
+}
+
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: limegreen;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+/* visited link */
+a:visited {
+  color: limegreen;
+}
+
+/* mouse over link */
+a:hover {
+  color: limegreen;
+  font-weight: 700;
+}
+
+/* selected link */
+a:active {
+  color: limegreen;
+}
+
+
+body {
+	background: black;
+	padding-top: 40px;
+	padding-right: 17%;
+	padding-left: 17%;
+ 	transition: background 10s ease;
+}
+
+.italic {
+	color: limegreen;
+	font-style: italic;
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: black;
+  	border: 15px double limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+}
+
+.main-title {
+	font-size: 3.25vw;
+	position: relative;
+	color: limegreen;
+	text-align: center;
+	line-height: 100%;
+}
+
+.vibrio1 {
+	display: block;
+	position: relative;
+	width: 40%;
+	height: auto;
+}
+
+.desc {
+	text-align: center;
+	color: limegreen;
+	font-size: 1.5vw;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.cap {
+	font-style: italic;
+	font-size: 1.25vw;
+	color: limegreen;
+	width: 40%;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 95%;               
+  background-color: limegreen;
+  height: 2px;
+}
+
+.s-title {
+	font-size: 2.5vw;
+	color: limegreen;
+	padding: 10px;
+	font-weight: 700;
+}
+
+.general-table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+table {
+
+	font-size: 1.5vw;
+	width: 100%;
+	border: 4px solid limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+    color: limegreen;
+}
+
+td,th {
+	padding: 1vw;
+	border: 4px solid limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+    color: limegreen;
+}
+
+.scroll {
+	font-size: 1.25vw;
+	color: limegreen;
+	font-style: italic;
+	padding-top: 30px;
+}
+
+.class-wrapper {
+	margin-right: 30px;
+	margin-bottom: 50px;
+	margin-left: 30px;
+	margin-top: 10px;
+	width: 55%;
+	color: limegreen;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px;
+	font-size: 1.5vw;
+	overflow-x: scroll;
+	gap: 12px;
+	border: 4px solid limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+}
+
+.item {
+	background: limegreen;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 1vw;
+	border: 2px solid limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+}
+
+.img-container {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.vibrio3 {
+	width: 60%;
+	height: auto;
+}
+
+.bobtail1 {
+	width: 90%;
+	height: auto;
+}
+
+.bs-image, .af-image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.symb {
+	font-size: 2vw;
+	color: limegreen;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.pict {
+	margin-left: 40%;
+	margin-right: 30%;
+	width: 100%;
+}
+ 
+.list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-left: 10%;
+	margin-right: 5%;
+}
+
+.list-name {
+	color: limegreen;
+	font-size: 2vw;
+	font-weight: 700;
+}
+
+.ul1 {
+	font-size: 1.5vw;
+	color: limegreen;
+	width: 60%;
+}
+
+.vibrio2 {
+	padding-top: 50px;
+	width: 50%;
+	height: auto;
+}
+
+.quorum-list {
+	padding-left: 20%;
+	padding-right: 20%;
+	color: limegreen;
+	font-size: 2vw;
+	width: 90%;
+}
+
+.bio-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.diagram {
+	width: 70%;
+	height: auto;
+	padding-bottom: 30px;
+	z-index: 9;
+}
+
+.enter-button {
+	width: 20vw;
+	text-align: center;
+	font-size: 2vw;
+	padding: 1.5vw;
+	border: 3px solid limegreen;
+    border-right-color: #015918;
+    border-bottom-color: #013d10;
+    z-index: 10;
+
+}
+
+.enter-button:hover {
+    background: limegreen;
+    color: black;
+    transition: ease-in-out 0.4s;
+}
+
+
+footer {
+	font-size: 1.2vw;
+	color: limegreen;
+	padding: 2vw;
+}
+
+
+
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0e3d09, 0 0 20px #0e3d09, 0 0 30px #0e3d09, 0 0 40px #0e3d09;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #19f202, 0 0 30px #19f202, 0 0 40px #19f202;
+  }
+}
+
+
+/*ANIMATED BACTERIA*/
+
+.germ {
+	display: inline-block;
+	background: limegreen;
+    width: 2.5vw;
+    height: 1vw;
+    border-radius: 300px;
+    animation: bacteria 2s linear infinite alternate;
+}
+
+.germ-block1, .germ-block2, .germ-block3, .germ-block4, .germ-block5 {
+	position: relative;
+	z-index: 100;
+	top: 20px;
+}
+
+.germ {
+	position: relative;
+	display: inline-block;
+	background: limegreen;
+    width: 2.5vw;
+    height: 1vw;
+    border-radius: 300px;
+}
+
+.germ1, .germ4, .germ6, .germ8, .germ14, .germ18, .germ23, .germ28, .germ40, .germ42, .germ45, .germ56, .germ63, .germ66, .germ73, .germ76, .germ84, .germ90{
+	position: relative;
+	transform: rotate(45deg);
+	top: 10px;
+	left: 25px;
+	z-index: 20;
+    animation: bacteria1 2s linear infinite alternate;
+}
+
+.germ2, .germ5, .germ16, .germ19, .germ24, .germ29, .germ39, .germ50, .germ51, .germ57, .germ63, .germ67, .germ72, .germ77, .germ85, .germ91 {
+	position: relative;
+	transform: rotate(-75deg);
+	top: 200px;
+	right: 55px;
+	z-index: 21;
+    animation: bacteria2 2s linear infinite alternate;
+}
+
+.germ3, .germ7, .germ17, .germ20, .germ25, .germ30, .germ38, .germ49, .germ58, .germ64, .germ71, .germ73, .germ78, .germ86 {
+	position: relative;
+	transform: rotate(-10deg);
+	top: 50px;
+	left: 47px;
+	z-index: 21;
+    animation: bacteria3 2s linear infinite alternate;
+}
+
+.germ9, .germ10, .germ11, .germ21, .germ26, .germ31, .germ34, .germ41, .germ48, .germ52, .germ59, .germ65, .germ70, .germ74, .germ79, .germ87 {
+	position: relative;
+	transform: rotate(10deg);
+	top: 20px;
+	right: 200px;
+	z-index: 21;
+    animation: bacteria3 2s linear infinite alternate;
+}
+
+.germ12, .germ13, .germ15, .germ22, .germ27, .germ32, .germ36, .germ37, .germ47, .germ53, .germ60, .germ66, .germ69, .germ75, .germ80, .germ88 {
+	position: relative;
+	transform: rotate(10deg);
+	top: 5px;
+	right: 1px;
+	z-index: 30;
+    animation: bacteria3 2s linear infinite alternate;
+}
+
+.germ33, .germ35, .germ43, .germ54, .germ61, .germ81, .germ82 {
+	position: relative;
+	transform: rotate(200deg);
+	bottom: 30px;
+	right: 100px;
+	z-index: 30;
+    animation: bacteria3 2s linear infinite alternate;
+}
+
+.germ12, .germ13, .germ15, .germ22, .germ27, .germ32, .germ44, .germ46, .germ55, .germ62, .germ68, .germ83, .germ89 {
+	position: relative;
+	transform: rotate(10deg);
+	top: 5px;
+	right: 1px;
+	z-index: 30;
+    animation: bacteria3 2s linear infinite alternate;
+}
+
+
+@keyframes bacteria1 {
+   0% { transform: rotate(45deg); box-shadow: 0px 0px 5px 0.05px limegreen;}
+   20% { transform: rotate(55deg); }
+   30% { transform: rotate(45deg); }
+   40% { transform: rotate(55deg); }
+   50% { transform: rotate(45deg); }
+   60% { transform: rotate(55deg); }
+   70% { transform: rotate(45deg); }
+   80% { transform: rotate(55deg); }
+   90% { transform: rotate(45deg); }
+   100% { transform: rotate(55deg); box-shadow: 0px 0px 10px 3px limegreen;}
+}
+
+
+
+@keyframes bacteria2 {
+   0% { transform: rotate(-75deg); box-shadow: 0px 0px 5px 0.05px limegreen;}
+   20% { transform: rotate(-85deg); }
+   30% { transform: rotate(-75deg); }
+   40% { transform: rotate(-85deg); }
+   50% { transform: rotate(-75deg); }
+   60% { transform: rotate(-85deg); }
+   70% { transform: rotate(-75deg); }
+   80% { transform: rotate(-85deg); }
+   90% { transform: rotate(-75deg); }
+   100% { transform: rotate(-85deg); box-shadow: 0px 0px 10px 3px limegreen;}
+}
+
+
+
+@keyframes bacteria3 {
+   0% { transform: rotate(160deg); box-shadow: 0px 0px 5px 0.05px limegreen;}
+   20% { transform: rotate(170deg); }
+   30% { transform: rotate(160deg); }
+   40% { transform: rotate(170deg); }
+   50% { transform: rotate(160deg); }
+   60% { transform: rotate(170deg); }
+   70% { transform: rotate(160deg); }
+   80% { transform: rotate(170deg); }
+   90% { transform: rotate(160deg); }
+   100% { transform: rotate(170deg); box-shadow: 0px 0px 10px 3px limegreen;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DO NOT DELETE*/
+
+/*@keyframes mymove {
+
+  from { transform: translate(0, 0px); }	
+
+  50% { box-shadow: 0px 0px 10px 2px limegreen; 
+  	    transform: translate(0, 5px); }
+
+  to   { transform: translate(0, -0px); }
+
+}*/
+
+/*DO NOT DELETE*/
+
+
+/*
+@keyframes mymove {
+  from {box-shadow: 0px 0px 5px 0.5px limegreen;}
+  to {box-shadow: 0px 0px 15px 1.5px limegreen;}
+}*/
+
+
+
+
+
