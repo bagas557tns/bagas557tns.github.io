@@ -1,0 +1,20 @@
+@font-face { 
+font-family: "Arial Narrow"; 
+src: url('assets/arial_narrow.ttf') format('truetype'); 
+}
+
+img {
+	width: 200pt;
+	padding-bottom: 20pt;
+}
+
+body{
+	font-family: "Arial Narrow";
+    --bindery-ui-bg: black;
+    --bindery-ui-text: white;
+    --bindery-ui-accent: black;
+}
+
+.image-container {
+	line-height: 3pt;
+}

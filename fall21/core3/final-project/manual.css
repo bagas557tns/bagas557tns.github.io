@@ -1,0 +1,87 @@
+ 
+.📖-running-header {
+	font-size: 8pt !important;
+    right: var(--bindery-margin-inner) !important;
+    left: var(--bindery-margin-outer) !important;
+    text-align: right !important;
+}
+
+
+@font-face { 
+font-family: "Arial Narrow"; 
+src: url('assets/arial_narrow.ttf') format('truetype'); 
+}
+
+img {
+	width: 100%;
+}
+
+body{
+	font-family: "Arial Narrow";
+    --bindery-ui-bg: black;
+    --bindery-ui-text: white;
+    --bindery-ui-accent: black;
+}
+
+#kb-counter {
+	position: relative;
+	bottom: 20pt;
+	right: 60pt;
+	margin: auto;
+	text-align: center;
+	font-size: 8pt;
+	border: 1pt solid black;
+	padding: 2pt;
+	border-radius: 50pt;
+	width: 40pt;
+}
+
+#div-header {
+	top: 275pt;
+	position: relative;
+    margin-top: 0.2in;
+	font-size: 32pt;
+}
+
+.intro {
+	font-size: 14pt;
+}
+
+.diagram {
+	font-size: 9.5pt;
+}
+
+ol {
+  padding-top: 20pt;	
+  padding-left: 10pt;
+  list-style-position: outside;
+
+}
+
+li:not(:first-of-type) {
+    margin-top: 5pt;
+}
+  
+li:not(:last-of-type) {
+   margin-bottom: 5pt;
+}
+
+.info {
+	font-size: 8pt;
+}
+
+
+.dl {
+	height: 4.5in;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+

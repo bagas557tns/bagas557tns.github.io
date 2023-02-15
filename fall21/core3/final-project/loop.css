@@ -1,0 +1,32 @@
+ 
+.📖-running-header {
+	font-size: 7pt !important;
+    right: var(--bindery-margin-inner) !important;
+    left: var(--bindery-margin-inner) !important;
+    text-align: center !important;
+}
+
+
+@font-face { 
+font-family: "Arial Narrow"; 
+src: url('assets/arial_narrow.ttf') format('truetype'); 
+}
+
+img {
+	width: 100%;
+	padding-top: 20pt;
+}
+
+body{
+	font-family: "Arial Narrow";
+    --bindery-ui-bg: black;
+    --bindery-ui-text: white;
+    --bindery-ui-accent: black;
+}
+
+#kb-counter {
+	text-align: center;
+	font-size: 7pt;
+}
+
+

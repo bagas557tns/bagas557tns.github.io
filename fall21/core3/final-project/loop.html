@@ -1,0 +1,115 @@
+<!-- Note: 
+
+This file works with bindery.js but the loops are not an efficient way to showcase information (at least the way I have been trying...)
+
+- Is it possible to intersperse a loop with information? 
+
+- Nested loop, so I can have a repeating structure of images, and information that is drawn from different loops? 
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="loop.css">
+	<title>Loop Version</title>
+</head>
+
+<body>
+
+<main id="content">
+<section id="downloads-container">
+</section>
+</main>
+
+</body>
+
+
+
+<script src="js/bindery.min.js"></script>
+
+<script>
+
+
+	var downloadsContainer = document.getElementById('downloads-container');
+	// var kbCounter = document.getElementById('kb-counter');
+
+	var num = ["0", "0", "0", "0"];
+
+
+
+	for(i=1; i<184; i++) {
+	downloadsContainer.innerHTML+= "<section id='download"+i+"'><img src='assets/img"+i+".jpeg' id='image"+i+"'><div id='kb-counter'> KB</div></section>";
+			}
+
+
+// Bindery materials 
+	Bindery.makeBook({
+  	content: '#content',
+  	pageSetup: {
+    	size: { width: '3.44in', height: '6in' },
+    	margin: { top: '0.5in', inner: '0.75in', outer: '0.5in', bottom: '0.6in' },
+  		},
+  	printSetup: {
+    	layout: Bindery.Layout.BOOKLET,
+    	paper: Bindery.Paper.AUTO_MARKS,
+    	marks: Bindery.Marks.CROP,
+    	bleed: '0.125in',
+ 		},
+  	rules: [
+    	Bindery.PageBreak({ 
+    		selector: "section", 
+    		position: 'before'
+    	}),
+        Bindery.RunningHeader({
+            render: (page) => {
+            if (page.isLeft) return `${page.number}...${'GOOD MORNING...'} `;
+            else if (page.isRight) return `${page.number}...${'HAVE A NICE DAY...'}`;
+            },
+        }),
+
+    	]
+	});
+</script>
+
+</html>
+
+
+
+
+<!-- JS TRIAL AND ERROR!! (MAINLY ERROR!!) -->
+
+<!-- 
+// creating separate 'download' sections
+	// for (i=1; i<184; i++) {
+	// var container = document.getElementById('imagegallery');
+	// var downloads = document.createElement("section");
+	// downloads.className = ['download' + i];
+	// container.appendChild(downloads);
+	// } -->
+
+<!-- // creating separate sections with images inside
+	// for(i=1; i<184; i++) {
+	// imagegallery.innerHTML+= "<section class='image"+i+"'><img src='assets/img"+i+".jpeg'></section>";
+	// }
+ -->
+
+<!-- // creating separate sections with images and message HTML inside
+	// for(i=1; i<184; i++) {
+	// imagegallery.innerHTML+= "<section id='download"+i+"'><div id='message"+i+"'>Message:</div><img src='assets/img"+i+".jpeg' id='image"+i+"'></section>";
+	// } -->
+
+<!-- // inserting string into an existing HTML element 
+	//document.getElementById('message').insertAdjacentHTML('beforeend', 'Hello'); -->
+
+<!-- // trying to insert storage counter
+	// downloadsContainer.appendChild(kbCounter.cloneNode(true));
+	// kbCounter.innerHTML+= "<div>0 KB</div>" -->
+
+<!-- // // replicating info element from parent html 
+	// download1.appendChild(info.cloneNode(true));
+ -->

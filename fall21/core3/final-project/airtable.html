@@ -1,0 +1,126 @@
+<!-- Note: 
+
+This file efficiently organizes and displays the information as desired via Airtable, but for some reason cannot be displayed via bindery.js (However, information source code is visible through Inspection)
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="airtable.css">
+	<title>Airtable Version</title>
+</head>
+<body>
+	<div id="container">
+		<h1>WhatsApp Index</h1>
+	</div>
+</body>
+
+<script src="js/bindery.min.js"></script>
+
+<script src="js/airtable.browser.js" type="text/javascript"></script>
+
+<script>
+var Airtable = require("airtable");
+var base = new Airtable({ apiKey: "keydXjoJ8NXsE089J" }).base(
+  "app01G5Te1ReeP3vl"
+);
+
+base("whatsapp").select({
+	view: "Grid view"
+}).eachPage(gotPageOfImages, gotAllImages);
+
+var images = [];
+
+function gotPageOfImages(records, fetchNextPage) {
+  console.log("gotPageOfImages()");
+  images.push(...records);
+  fetchNextPage();
+}
+
+function gotAllImages(err) {
+  console.log("gotAllImages()");
+
+  if (err) {
+    console.log("error loading data");
+    console.error(err);
+    return;
+  }
+
+  consoleLogImages();
+  showImages();
+}
+
+function consoleLogImages() {
+  console.log("consoleLogImages()");
+  images.forEach((image) => {
+    console.log("Image:", image);
+  });
+}
+
+function showImages() {
+  console.log("showImages()");
+  images.forEach((image, index) => { 
+
+  	var imageContainer = document.createElement("div");
+  	imageContainer.classList.add("image-container");
+  	document.querySelector("#container").append(imageContainer);
+
+  	// imageContainer.setAttribute("id", index);
+
+  	var imageTitle = document.createElement("p");
+  	imageTitle.innerHTML = "Message: " + image.fields.message;
+  	imageContainer.append(imageTitle);
+
+  	var imageTimeEst = document.createElement("p");
+  	imageTimeEst.innerHTML = "Date/Time (EST): " + image.fields.time_est;  	
+  	imageContainer.append(imageTimeEst);
+
+  	var imageTimeIst = document.createElement("p");
+  	imageTimeIst.innerHTML = "Date/Time (IST): " + image.fields.time_ist;
+  	imageContainer.append(imageTimeIst);
+
+  	var imageSize = document.createElement("p");
+  	imageSize.innerHTML = "Image Size: " + image.fields.size
+  	imageContainer.append(imageSize);
+
+  	var imageFile = document.createElement("img");
+  	imageFile.src = image.fields.file[0].url;
+  	imageContainer.append(imageFile);
+  }); 
+}
+
+// // Bindery materials 
+// 	Bindery.makeBook({
+//   	content: "#container",
+//   	pageSetup: {
+//     	size: { width: '3.44in', height: '6in' },
+//     	margin: { top: '0.5in', inner: '0.75in', outer: '0.5in', bottom: '0.6in' },
+//   		},
+//   	printSetup: {
+//     	layout: Bindery.Layout.BOOKLET,
+//     	paper: Bindery.Paper.AUTO_MARKS,
+//     	marks: Bindery.Marks.CROP,
+//     	bleed: '0.125in',
+//  		},
+//   	rules: [
+//     	Bindery.PageBreak({ 
+//     		selector: "img", 
+//     		position: 'before'
+//     	}),
+//         Bindery.RunningHeader({
+//             render: (page) => {
+//             if (page.isLeft) return `${page.number}...${'GOOD MORNING...'} `;
+//             else if (page.isRight) return `${page.number}...${'HAVE A NICE DAY...'}`;
+//             },
+//         }),
+
+//     	]
+// 	});
+
+
+
+</script>
+
+</html>
