@@ -1,0 +1,140 @@
+<!-- 
+Prototype 1:
+- Controlled grid of white space (50 cells)
+- Variable generation between space and 3 characters 
+- Outcome is too similar? 
+ -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prototype (1)</title>
+	<link rel="stylesheet" type="text/css" href="prototype1.css">
+</head>
+
+<body>
+
+	<div id="block1">
+	<pre>
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+		<a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a> <a href="">&nbsp</a>  
+	</pre>
+	</div>
+
+<script type="text/javascript">
+
+// giving ids and setting individual cell variables via loop (b# format)
+var links = document.querySelectorAll("a"); 
+for(i=0; i < links.length; i++) { 
+	links[i].setAttribute("id", "b" + i);
+	var b = [];
+	b[i] = document.getElementById("b" + i);
+}
+
+
+var starTypes = ["○", "▪︎", "❈", "&nbsp" ]
+b0.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b5.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b9.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b0.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b11.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b12.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b13.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b14.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b16.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b17.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b19.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b21.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b24.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b26.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b27.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b29.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b31.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b34.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b36.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b37.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b39.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b41.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b42.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b43.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b44.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b49.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b50.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b55.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b59.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b61.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b62.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b63.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b66.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b67.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b68.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b71.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b72.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b73.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b76.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b79.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b86.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b89.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b90.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b91.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b92.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b93.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b94.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b95.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b97.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b98.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b99.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+
+
+// duplicated initial block 3x
+var block1 = document.querySelector('#block1');
+var clone = block1.cloneNode(true);
+clone.id = 'block2';
+clone.classList.add('block-2')
+block1.after(clone);
+
+var block2 = document.querySelector('#block2');
+var clone = block2.cloneNode(true);
+clone.id = 'block3';
+clone.classList.add('block-3')
+block2.after(clone);
+
+var block3 = document.querySelector('#block3');
+var clone = block3.cloneNode(true);
+clone.id = 'block4';
+clone.classList.add('block-4')
+block3.after(clone);
+
+
+// reflecting duplicated blocks across x, x+y, and y axes
+window.onload = function myFunction() {
+	document.getElementById('block2').style.transform = "scaleX(-1)"
+	document.getElementById('block3').style.transform = "scale(-1,-1)"
+	document.getElementById('block4').style.transform = "scaleY(-1)"
+ }
+
+
+
+</script>
+
+</body>
+</html>
+
+
+<!-- ◎ ◉ ❉ ❈ ※ ✺ ✤ ✽ ❖ ● ○ ⁃ ∎ ▪︎ ◼︎ - | ∎ -->
+<!-- &nbsp -->
+
+
+

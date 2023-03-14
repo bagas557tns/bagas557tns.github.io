@@ -1,0 +1,79 @@
+body {
+  /*overflow: hidden;*/
+  margin: 0;
+  padding:0;
+}
+
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+#frame {
+  position: absolute;
+  z-index: 0;
+}
+
+#main {
+  position: absolute;
+  font-size: 16px;
+  z-index: 2;
+  line-height: 0.65em;
+  letter-spacing: 0.05em;
+  width: 150px;
+  top: 200px;
+  left: 475px;
+}
+
+#block2 {
+  position: absolute;
+  left: 257px;
+  top: 0px;
+}
+
+#border-v1 {
+  left: 430px;
+  top: 110px;
+  position: absolute;
+  border:none; 
+  margin: 0; 
+  width: 25px;
+  height: 500px;
+  scrolling: "no";
+}
+
+
+#border-v2 {
+  left: 1000px;
+  top: 110px;
+  position: absolute;
+  border:none; 
+  margin: 0; 
+  width: 25px;
+  height: 500px;
+  scrolling: "no";
+}
+
+
+#border-h1 {
+  left: 450px;
+  top: 110px;
+  position: absolute;
+  border:none; 
+  margin: 0; 
+  width: 565px;
+  height: 25px;
+  scrolling: "no";
+}
+
+#border-h2 {
+  left: 450px;
+  top: 585px;
+  position: absolute;
+  border:none; 
+  margin: 0; 
+  width: 565px;
+  height: 25px;
+  scrolling: "no";
+}

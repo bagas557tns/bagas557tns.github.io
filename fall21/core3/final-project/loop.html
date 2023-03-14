@@ -38,12 +38,12 @@ This file works with bindery.js but the loops are not an efficient way to showca
 	var downloadsContainer = document.getElementById('downloads-container');
 	// var kbCounter = document.getElementById('kb-counter');
 
-	var num = ["0", "0", "0", "0"];
+	var num = ["0", "2", "4", "4"];
 
 
 
 	for(i=1; i<184; i++) {
-	downloadsContainer.innerHTML+= "<section id='download"+i+"'><img src='assets/img"+i+".jpeg' id='image"+i+"'><div id='kb-counter'> KB</div></section>";
+	downloadsContainer.innerHTML+= "<section id='download"+i+"'><img src='assets/img"+i+".jpeg' id='image"+i+"'><div id='kb-counter'>"+ num[Math.floor(Math.random()*num.length)] +" KB</div></section>";
 			}
 
 

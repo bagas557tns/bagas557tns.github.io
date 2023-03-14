@@ -1,0 +1,41 @@
+body {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 32px;
+  overflow-y: hidden;
+}
+
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+#block1 {
+position: relative;
+font-size: 20px;
+width: 300px;
+}
+
+#block2 {
+position: relative;
+left: 550px;
+bottom: 278px;
+font-size: 20px;
+width: 300px;
+}
+
+#block3 {
+position: relative;
+left: 550px;
+bottom: 332.5px;
+font-size: 20px;
+width: 300px;
+}
+
+#block4 {
+position: relative;
+bottom: 610px;
+font-size: 20px;
+width: 300px;
+}

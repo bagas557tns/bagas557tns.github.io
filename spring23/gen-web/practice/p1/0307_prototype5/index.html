@@ -1,0 +1,172 @@
+<!-- Script categorized by chars -->
+<!-- Character palettes for sep char types, randomized together -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<!-- 	<meta http-equiv="refresh" content="1">
+ -->	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prototype (5)</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<body>
+
+<div id="main">
+	<div id="block1">
+	<pre>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+		<a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a><a href="">&nbsp</a>
+	</pre>
+	</div>
+</div>
+
+<!-- ︲╶ ◎ ◉ ❉ ❈ ※ ∷ + ✳︎ ✺ ✤ ✽ ❖ ● ○ ⁃ ∎ ▪︎ ◼︎ - | ∎ • ◦-->
+
+
+<script type="text/javascript">
+// giving ids and setting individual cell variables via loop (b# format)
+var links = document.querySelectorAll("a"); 
+for(i=0; i < links.length; i++) { 
+	links[i].setAttribute("id", "b" + i);
+	var b = [];
+	b[i] = document.getElementById("b" + i);
+}
+
+
+// !!! currently square and star chars are switched
+
+var square1 = ["❈", "❈", "&nbsp"], 
+	square2 = ["+", "+", "&nbsp"], 
+	square3 = ["✳", "✳︎", "&nbsp"]
+var squarePalletes = [square1, square2, square3]
+var squareTypes = squarePalletes[Math.floor(Math.random() * squarePalletes.length)]
+
+b1.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b4.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b5.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b6.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b10.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b22.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b23.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b32.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b33.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b40.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b50.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b55.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b60.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b77.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b79.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+b97.innerHTML = squareTypes[Math.floor(Math.random()*squareTypes.length)]
+
+
+var dot1 = ["◦", "◦", "&nbsp"], 
+	dot2 = ["•", "•", "&nbsp"]
+var dotPalletes = [dot1, dot2]
+var dotTypes = dotPalletes[Math.floor(Math.random() * dotPalletes.length)]
+
+b0.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b11.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b14.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b29.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b39.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b41.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b44.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b49.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b59.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b78.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b87.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b88.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b92.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b93.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b94.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b95.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+
+
+
+
+var star1 = ["▪", "▪︎", "&nbsp"], 
+	star2 = ["✽", "✽", "&nbsp"],
+	star3 = ["✤", "✤", "&nbsp"],
+	star4 = ["❖", "❖", "&nbsp"]
+var starPalletes = [star1, star2, star3, star4]
+var starTypes = starPalletes[Math.floor(Math.random() * starPalletes.length)]
+
+b8.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b9.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b12.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b13.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b19.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b21.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b24.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b26.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b27.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b31.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b34.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b36.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b37.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b42.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b43.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b62.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b63.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b66.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b67.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b68.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b69.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b72.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b73.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b76.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b80.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b86.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b89.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b90.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b91.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b96.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+b98.innerHTML = starTypes[Math.floor(Math.random()*starTypes.length)]
+
+
+
+// duplicated initial block 3x
+var block1 = document.querySelector('#block1');
+var clone = block1.cloneNode(true);
+clone.id = 'block2';
+clone.classList.add('block-2')
+block1.after(clone);
+
+var block2 = document.querySelector('#block2');
+var clone = block2.cloneNode(true);
+clone.id = 'block3';
+clone.classList.add('block-3')
+block2.after(clone);
+
+var block3 = document.querySelector('#block3');
+var clone = block3.cloneNode(true);
+clone.id = 'block4';
+clone.classList.add('block-4')
+block3.after(clone);
+
+
+
+// reflecting duplicated blocks across x, x+y, and y axes
+window.onload = function myFunction() {
+	document.getElementById('block2').style.transform = "scaleX(-1)"
+	document.getElementById('block3').style.transform = "scale(-1,-1)"
+	document.getElementById('block4').style.transform = "scaleY(-1)"
+ }
+
+
+</script>
+
+</body>
+</html>

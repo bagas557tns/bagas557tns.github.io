@@ -1,0 +1,129 @@
+<!-- Need to figure out a way to extract certain variables from
+the grid and group them in accordance to different character arrays -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice Sketch (2)</title>
+</head>
+
+<style type="text/css">
+	a, a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+body {
+	padding-left: 150px;
+	padding-top: 100px;
+	font-size: 32px;
+}
+
+section {
+	width: 100px;
+}
+
+#block1 {
+}
+
+#block2 {
+	position: relative;
+	bottom: 257px;
+	left: 345px;
+}
+
+#block3 {
+	position: relative;
+	bottom: 288px;
+	left: 345px;
+}
+
+#block4 {
+	position: relative;
+	bottom: 545px;
+	left: 0px;
+}
+</style>
+
+
+
+<body>
+
+
+<section id="block1" href="https://wikipedia.org" >
+<pre>
+<a href="">&nbsp</a> <a href="">▪︎</a> <a href="">▪︎</a> <a href="">▪︎</a> <a href="">▪︎</a> <a href="">&nbsp</a> 
+<a href="">▪︎</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> 
+<a href="">▪︎</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> 
+<a href="">▪︎</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> 
+<a href="">▪︎</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> 
+<a href="">&nbsp</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">❉</a> <a href="">&nbsp</a> 
+</pre>
+</section>
+</body>
+
+
+<script type="text/javascript">
+
+
+// giving ids and setting variables via loop (b# format)
+var links = document.querySelectorAll("a"); 
+for(i=0; i < links.length; i++) { 
+		links[i].setAttribute("id", "b" + i);
+		var b = [];
+		b[i] = document.getElementById("b" + i);
+	}
+
+var dotTypes = ["&nbsp", "●", "○", "◉", "0"]
+b0.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b5.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b30.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+b35.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+
+
+// figuring out a way to extract certain variables, and giving them different character arrays to randomize from
+// var dotTypes = ["&nbsp", "●", "○", "◉"]
+// var dots = ['b0', 'b5', 'b30', 'b35'] 
+//what is the syntax for grouping variables?? objects..?
+// dots.innerHTML = dotTypes[Math.floor(Math.random()*dotTypes.length)]
+
+
+
+// duplicated initial block 3x
+var block1 = document.querySelector('#block1');
+var clone = block1.cloneNode(true);
+clone.id = 'block2';
+clone.classList.add('block-2')
+block1.after(clone);
+
+var block2 = document.querySelector('#block2');
+var clone = block2.cloneNode(true);
+clone.id = 'block3';
+clone.classList.add('block-3')
+block2.after(clone);
+
+var block3 = document.querySelector('#block3');
+var clone = block3.cloneNode(true);
+clone.id = 'block4';
+clone.classList.add('block-4')
+block3.after(clone);
+
+// reflecting duplicated blocks across x, x+y, and y axes
+window.onload = function myFunction() {
+	document.getElementById('block2').style.transform = "scaleX(-1)"
+	document.getElementById('block3').style.transform = "scale(-1,-1)"
+	document.getElementById('block4').style.transform = "scaleY(-1)"
+ }
+
+
+</script>
+</html>
+
+<!-- ◎ ◉ ❉ ❈ ※ ✺ ✤ ✽ ❖ ● ○ ⁃ ∎ ▪︎ ◼︎ - | ∎ -->
+<!-- &nbsp -->
+
+

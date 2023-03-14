@@ -1,0 +1,140 @@
+<!-- Is there a way to give individual IDs to the td elements via javascript, setAttribute? -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 	<meta http-equiv="refresh" content="1">
+ -->	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice Sketch (3)</title>
+</head>
+<style type="text/css">	
+	a, a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+body {
+	padding-left: 150px;
+	padding-top: 100px;
+	font-size: 21px;
+}
+
+#block2 {
+	position: relative;
+	bottom: 309px;
+	right: 300px;
+}
+
+#block3 {
+	position: relative;
+	bottom: 335px;
+	right: 300px;
+}
+
+#block4 {
+	position: absolute;
+	top: 390px;
+	left: 160px;
+}
+
+
+
+
+
+
+</style>
+<body>
+
+<a href="">
+	<pre id="block1"></pre>
+</a>
+
+<script type="text/javascript">
+
+var block1 = document.getElementById('block1');
+/*Create table element*/
+var table    = document.createElement("table");               
+var rows     = 10;
+var cols     = 15;
+var char  = ["❉", "#", "◎", "○", "\u00A0"];
+for (var i = 1; i <= rows; i++) {
+	/*Create tr element*/
+	var tr = document.createElement("tr");
+	tr.setAttribute("id", "tr" + i)
+	for (var j = 1; j <= cols; j++) {
+		/*Create td element*/
+	    var td = document.createElement("td");
+	    td.setAttribute("id", "td" + j); 
+	    /*Create text for td element*/       
+	    var cellText = document.createTextNode(char[Math.floor(Math.random()*char.length)]);
+	    /*Append text to td element*/
+	    td.appendChild(cellText); 
+	    /*Append td to tr element*/
+	    tr.appendChild(td);
+	}
+
+	/*Append tr to table element*/
+	table.appendChild(tr);                                
+}
+/*Append table to calendar div*/
+block1.appendChild(table);
+
+// duplicated initial block 3x
+var block1 = document.querySelector('#block1');
+var clone = block1.cloneNode(true);
+clone.id = 'block2';
+clone.classList.add('block-2')
+block1.after(clone);
+
+var block2 = document.querySelector('#block2');
+var clone = block2.cloneNode(true);
+clone.id = 'block3';
+clone.classList.add('block-3')
+block2.after(clone);
+
+var block3 = document.querySelector('#block3');
+var clone = block3.cloneNode(true);
+clone.id = 'block4';
+clone.classList.add('block-4')
+block3.after(clone);
+
+// reflecting duplicated blocks across x, x+y, and y axes
+window.onload = function myFunction() {
+	document.getElementById('block2').style.transform = "scaleX(-1)"
+	document.getElementById('block3').style.transform = "scale(-1,-1)"
+	document.getElementById('block4').style.transform = "scaleY(-1)"
+}
+
+</script>
+</body>
+</html>
+
+
+<!-- ◎ ◉ ❉ ❈ ※ ✺ ✤ ✽ ❖ ● ○ ⁃ ∎ ▪︎ ◼︎ - | ∎ -->
+<!-- &nbsp -->
+
+
+
+
+
+<!-- NOT WORKING -->
+
+<!-- Attempting to create a grid of links with nested loop -->
+
+<!-- 	var rows = 10;
+	var cols = 10;
+	var block1 = document.querySelector("#block1");
+	var link = document.createElement("a");
+		link.innerHTML = "#"
+		link.setAttribute("href", "http://wikipedia.org") 
+
+	for (i=1; i<=rows; i++) 
+	{
+		for (j=1; j<=cols; j++) 
+		{
+			block1.appendChild(link);
+		}
+		block1.innerHTML+= "<br/><br/>";
+	} -->
