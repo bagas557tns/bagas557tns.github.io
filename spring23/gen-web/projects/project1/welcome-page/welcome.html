@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.75">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>❈ WELCOME! ❈</title>
+</head>
+<body>
+	<div class="content-container">
+		<div class="welcome">WELCOME!</div>
+		<div class="enter">
+			<a id="click" href="">[ Please click here to enter ]</a>
+		</div>
+		<div class="about">
+			<a href="../info-page/index.html">[&nbsp ? &nbsp]</a>
+		</div>	
+	</div>
+</body>
+<script type="text/javascript">
+	var click = document.getElementById('click');
+var links = ["../four-grid/index.html", "../one-grid/index.html"];
+click.setAttribute('href', links[Math.floor(Math.random()*links.length)]);
+</script>
+</html>

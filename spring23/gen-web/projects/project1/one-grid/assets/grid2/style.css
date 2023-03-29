@@ -1,0 +1,40 @@
+body {
+  overflow-y: hidden;
+}
+
+::selection {
+  color: white;
+  background: blue;
+}
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+#main {
+bottom: 20px;
+right: 235px;
+line-height: 0.65em;
+letter-spacing: 0.05em;
+position: relative;
+font-size: 24px;
+width: 150px;
+}
+
+#block2 {
+position: relative;
+left: 622.5px;
+bottom: 195.5px;
+}
+
+#block3 {
+position: relative;
+left: 622.5px;
+bottom: 248px;
+}
+
+#block4 {
+position: relative;
+bottom: 443px;
+}

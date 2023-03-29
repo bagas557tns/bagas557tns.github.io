@@ -1,0 +1,108 @@
+body {
+	font-size: 16px;
+	font-weight: bold;
+	color: blue;
+  margin-top: 50px;
+}
+
+::selection {
+  color: white;
+  background: blue;
+}
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.content-container {
+    margin: 0 auto; 
+    width: 45%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image:  url("../assets/repeat1.png") 100 /  20px / 0 round;
+    border-width:  50px;
+    border-style:  solid;
+ }
+
+.flower {
+  font-size: 30px;
+}
+
+.desc, .title {
+  text-align: center;
+}
+
+.bar {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+p {
+  font-size: 20px;
+  font-weight: normal;
+  margin-right: 17.5px;
+  margin-left: 20px;
+}
+
+.cap {
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 10px;
+}
+
+img {
+  width: 75%;
+  height: auto;
+}
+
+.img-container1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 17.5vw 17.5vw;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+}
+
+ul {
+  font-weight: normal;
+  list-style-type: none;
+}
+
+.cred {
+  font-weight: normal;
+}
+
+
+/*LIVE GRID*/
+
+#main1 {
+right: 310px;
+line-height: 0.65em;
+letter-spacing: 0.05em;
+position: relative;
+font-size: 24px;
+width: 150px;
+height: 300px;
+}
+
+#block2 {
+position: relative;
+left: 622.5px;
+bottom: 195.5px;
+}
+
+#block3 {
+position: relative;
+left: 622.5px;
+bottom: 248px;
+}
+
+#block4 {
+position: relative;
+bottom: 443px;
+}

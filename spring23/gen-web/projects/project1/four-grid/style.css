@@ -1,0 +1,54 @@
+body {
+	font-size: 16px;
+	font-weight: bold;
+	color: blue;
+  margin-top: 50px;
+}
+
+::selection {
+  color: white;
+  background: blue;
+}
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.content-container {
+    margin: 0 auto; 
+    width: 45%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image:  url("../assets/repeat1.png") 100 /  20px / 0 round;
+    border-width:  50px;
+    border-style:  solid;
+ }
+
+#shape-frame1, #shape-frame2, #shape-frame3, #shape-frame4  {
+  border: none;
+  width: 172px;
+  height: 174px;
+}
+
+.shape-container {
+  text-align: center;
+  width: 362.5px;
+  display: grid;
+  grid-template-columns: 172px 172px;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.leave {
+  padding-bottom: 24px;
+}
+
+.next {
+  padding-top: 24px;
+}

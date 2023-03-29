@@ -1,0 +1,52 @@
+body {
+	font-size: 16px;
+	font-weight: bold;
+	color: blue;
+  margin-top: 10%;
+}
+
+::selection {
+  color: white;
+  background: blue;
+}
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.content-container {
+    margin: 0 auto; 
+    width: 25%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image:  url("../assets/repeat1.png") 100 /  20px / 0 round;
+    border-width:  50px;
+    border-style:  solid;
+ }
+
+.welcome, .enter, .please  {
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.please {
+  width: 150px;
+}
+
+.about {
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+

@@ -4,25 +4,25 @@ body {
   padding:0;
 }
 
-
 a, a:visited {
   color: blue;
   text-decoration: none;
 }
 
 #frame {
+  top: -2%;
   position: absolute;
   z-index: 0;
 }
 
-#main {
+#main1 {
   position: absolute;
   font-size: 16px;
   z-index: 2;
   line-height: 0.65em;
   letter-spacing: 0.05em;
   width: 150px;
-  top: 200px;
+  top: 225px;
   left: 475px;
 }
 
@@ -30,6 +30,29 @@ a, a:visited {
   position: absolute;
   left: 257px;
   top: 0px;
+}
+
+#block3 {
+  position: absolute;
+  left: 257px;
+  top: 92px;
+}
+
+#block4 {
+  position: absolute;
+  left: 0px;
+  top: 92px;
+}
+
+#main2 {
+  position: absolute;
+  font-size: 16px;
+  z-index: 2;
+  line-height: 0.65em;
+  letter-spacing: 0.05em;
+  width: 150px;
+  top: 305px;
+  left: 475px;
 }
 
 #border-v1 {

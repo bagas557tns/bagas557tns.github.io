@@ -1,0 +1,54 @@
+body {
+	font-size: 16px;
+	font-weight: bold;
+	color: blue;
+  margin-top: 50px;
+}
+
+::selection {
+  color: white;
+  background: blue;
+}
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.content-container {
+    margin: 0 auto; 
+    width: 45%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image:  url("../assets/repeat1.png") 100 /  20px / 0 round;
+    border-width:  50px;
+    border-style:  solid;
+ }
+
+#shape-frame {
+  border: none;
+  width: 320px;
+  height: 320px;
+}
+
+.leave {
+  padding-bottom: 50px;
+}
+
+.next {
+  padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+

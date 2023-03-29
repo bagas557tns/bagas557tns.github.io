@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>❈</title>
+</head>
+<body>
+	<div class="content-container">
+		<div class="leave">
+			<a href="../welcome-page/welcome.html">[ Leave ]</a>
+		</div>	
+		<div class="shape">
+			<iframe id="shape-frame" src="" scrolling="no">
+			</iframe>
+		</div>		
+		<div class="next">
+			<a href="../four-grid/index.html">[ Next ]</a>
+		</div>	
+	</div>
+</body>
+
+<script type="text/javascript">
+var frame = document.getElementById('shape-frame');
+var grids = ["assets/grid1/index.html", "assets/grid2/index.html", "assets/grid3/index.html", "assets/grid4/index.html"];
+frame.setAttribute('src', grids[Math.floor(Math.random()*grids.length)]);
+
+</script>
+
+</html>

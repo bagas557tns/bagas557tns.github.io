@@ -1,0 +1,34 @@
+body {
+	font-size: 14px;
+	font-weight: bold;
+	color: blue;
+  letter-spacing: 2.5px;
+}
+
+::selection {
+  color: white;
+  background: blue;
+}
+
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.content-container { 
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+ }
+
+ .content-frame {
+  width: 450px;
+  height: 275px;
+}
+
+.next {
+  padding-top: 20px;
+}
